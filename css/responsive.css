@@ -213,6 +213,10 @@
         padding-block: var(--size-120px) var(--size-100px);
     }
 
+    .hero__title {
+        line-height: var(--size-64px);
+    }
+
     /* Abous US */
 
     .our-team__members {
