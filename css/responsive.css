@@ -1,0 +1,290 @@
+/* Breakpoint: 1200px */
+@media (max-width: 75rem) {
+    .custom-container {
+        width: calc(100% - 3rem);
+    }
+
+    /* Footer */
+    .footer-grid {
+        --size-242px: 15.125rem;
+
+        display: grid;
+        grid-template-areas:
+            "logo-links footer-form footer-form"
+            "contact-us who-we-are our-experience";
+        row-gap: var(--size-48px);
+        column-gap: var(--size-30px);
+        grid-auto-columns: 1fr 1fr 1fr;
+    }
+
+    /* Work */
+
+    .title-img__wrapper {
+        height: 50vw;
+        width: 70vw;
+    }
+
+    /* News */
+
+    .news-content__banner-img {
+        height: 40vw;
+    }
+
+    /* Contact Us */
+
+}
+
+/* Breakpoint: 992px */
+@media (max-width: 62rem) {
+    .header__contact {
+        display: none;
+    }
+
+    .section__header {
+        margin-bottom: var(--size-40px);
+    }
+
+    .our-values {
+        padding-top: var(--size-100px);
+    }
+
+    .our-services {
+        padding: var(--size-80px);
+    }
+
+    .browse-our-projects {
+        padding-block: var(--size-80px);
+    }
+
+    .explore-all {
+        margin-top: var(--size-30px);
+        gap: var(--size-30px);
+    }
+
+    /* Footer */
+
+    .footer-grid {
+        --size-242px: 15.125rem;
+
+        display: grid;
+        grid-template-areas:
+            "logo-links logo-links logo-links"
+            "contact-us who-we-are our-experience"
+            "footer-form footer-form footer-form";
+        row-gap: var(--size-40px);
+        grid-auto-columns: 1fr 1fr 1fr;
+    }
+
+    .footer-about-us {
+        max-width: unset;
+    }
+
+    .footer-links {
+        margin-left: auto;
+    }
+
+    /* About Us */
+
+    .our-team__members {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: var(--size-30px);
+        row-gap: var(--size-30px);
+    }
+
+    .about-ceo {
+        margin-top: var(--size-120px);
+    }
+
+    :is(.ceo-quote, .ask-question) {
+        position: static!important;
+    }
+
+    .general-info {
+        padding-block: var(--size-60px);
+    }
+
+    .values {
+        margin-bottom: var(--size-100px);
+    }
+
+    /* Services */
+
+    .services-page-item:not(:last-child) {
+        margin-bottom: var(--size-40px);
+    }
+
+    .sp-item-flex {
+        gap: var(--size-60px);
+    }
+
+    :is(.values, .benefits) {
+        gap: var(--size-80px);
+    }
+
+    /* Interior Design */
+
+    .offerings {
+        padding-block: var(--size-80px) var(--size-100px);
+    }
+
+    .related-projects {
+        padding-block: var(--size-140px) var(--size-100px);
+    }
+
+    /* Our Work */
+
+    .ow-hero {
+        background-size: cover;
+    }
+
+    .our-works__container .services__items {
+        overflow: scroll;
+    }
+
+    /* Modern Cottage */
+
+    .decisions {
+        flex-direction: column-reverse;
+        gap: var(--size-40px);
+        align-items: flex-start;
+    }
+
+    .cd-img {
+        height: 60vw;
+    }
+
+    /* Available Position */
+
+    .apply-now {
+        gap: var(--size-60px);
+    }
+
+    .apply-now-job {
+        align-items: stretch !important;
+    }
+
+    /* News */
+
+    .news-categories {
+        padding-block: var(--size-60px) var(--size-80px);
+    }
+
+    .name-mail {
+        flex-direction: column;
+    }
+
+    /* Contact Us */
+
+    .cu-form__img {
+        height: 40vw;
+        margin-bottom: var(--size-40px);
+    }
+
+    .our-offices-section {
+        padding-block: var(--size-40px) var(--size-60px);
+    }
+
+    .our-offices {
+        gap: var(--size-80px);
+        margin-bottom: var(--size-60px);
+    }
+
+    .office:not(:last-child)::after {
+        display: none;
+    }
+
+}
+
+/* Breakpoint: 768px */
+@media (max-width: 48rem) {
+
+    /* Hero */
+
+    .page-hero {
+        padding-block: var(--size-120px) var(--size-100px);
+    }
+
+    /* Abous US */
+
+    .our-team__members {
+        column-gap: var(--size-20px);
+    }
+
+    /* Services */
+
+    /* Interior Design */
+
+    .our-partners {
+        padding-block: var(--size-80px);
+    }
+   
+
+    /* Available Positions */
+
+    .apply-now-job {
+        padding: var(--size-24px) var(--size-32px);
+        flex-direction: column;
+        gap: var(--size-20px);
+    }
+
+    /* News */
+
+    .news__items {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        column-gap: var(--size-20px);
+        row-gap: var(--size-30px);
+        padding-block: var(--size-40px);
+    }
+
+    :is(.news-content, .our-works__container) {
+        padding-bottom: var(--size-60px);
+    }
+
+    .related-news {
+        padding-block: var(--size-60px);
+    }
+
+    :is(.comments-section, .ow-clients, .services-page__items) {
+        padding-block: var(--size-60px) var(--size-80px);
+    }
+
+    /* Contact Us */
+
+    .contact-us {
+        padding-block: var(--size-80px);
+    }
+
+    .cu-form__wrapper {
+        display: grid;
+        grid-template-areas:
+            "name"
+            "select-interest"
+            "phone"
+            "select-location"
+            "email"
+            "radio"
+            "cu-textarea"
+            "check-submit";
+        grid-auto-columns: 1fr;
+
+        column-gap: var(--size-30px);
+        row-gap: var(--size-24px);
+    }
+
+    .check-btn__wrapper {
+        flex-direction: column;
+        gap: var(--size-20px);
+        margin-block: 0;
+        align-items: flex-start !important;
+    }
+
+}
+
+/* Breakpoint: 480px */
+@media (max-width: 30rem) {
+    .our-team__members {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+}

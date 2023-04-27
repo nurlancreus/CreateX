@@ -1,0 +1,120 @@
+/* Header */
+
+:is(.header__container .nav-link:hover, .header__container .nav-link[aria-current=page]) {
+    color: var(--clr-neutral-100);
+}
+
+/* Hero */
+
+.page-hero {
+    background-image: url(../img/bg-imagecottage.png);
+}
+
+.page-header {
+    max-width: unset;
+    margin-top: var(--size-80px);
+}
+
+/* Project Goal */
+
+.project-goal {
+    padding-block: var(--size-100px) var(--size-120px);
+}
+
+.pg__title {
+    margin-bottom: var(--size-40px);
+}
+
+:is(.pg__title, .cd__title) {
+    line-height: var(--size-60px);
+}
+
+:is(.pg__description, .cd__list > li) {
+    line-height: var(--size-26px);
+}
+
+/* .about-goal {
+    gap: var(--size-136px);
+} */
+
+/* Project Goal Table */
+
+.details {
+    padding: var(--size-40px) var(--size-28px);
+    margin-left: var(--size-136px);
+
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+.pg-details-table {
+    border-collapse: separate;
+    border-spacing: var(--size-32px) var(--size-16px);
+}
+
+.pg-details-table th {
+    padding-right: var(--size-8px);
+}
+
+.pg-details-table td {
+    margin-left: var(--size-32px);
+}
+
+/* Carousel */
+
+.goal-carousel {
+    margin-block: var(--size-120px);
+}
+
+/* Constructive Decisions */
+
+.constructive-decisions {
+    padding-block: var(--size-20px) 0;
+}
+
+.decisions {
+    align-items: center;
+    gap: var(--size-136px);
+}
+
+.cd__title {
+    margin-bottom: var(--size-60px);
+}
+
+.cd__list>li:not(:last-child) {
+    margin-bottom: var(--size-20px);
+}
+
+.cd__list {
+    margin-left: var(--size-20px);
+    list-style-type: none;
+}
+
+.cd__list>li::before {
+    content: url(../img/check.svg);
+    position: relative;
+    top: 3px;
+    bottom: 3px;
+    right: var(--size-16px);
+}
+
+.cd-img {
+    --size-550px: 34.375rem;
+
+    height: var(--size-550px);
+    position: relative;
+    top: var(--size-60px);
+}
+
+/* Similar Projects */
+
+.similar-projects {
+    padding-block: var(--size-180px) var(--size-120px);
+}
+
+.our-projects {
+    margin-inline: calc(var(--size-15px) * -1)!important;
+}
+
+.project-card {
+    padding-inline: var(--size-15px)!important;
+}

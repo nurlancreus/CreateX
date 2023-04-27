@@ -1,0 +1,109 @@
+/* Modal */
+
+.ap__modal {
+    z-index: 10000;
+}
+
+.ap__modal .modal {
+    --modal-backdrop-bg: rgba(30, 33, 44, 0.75);
+    background-color: var(--modal--backdrop-bg);
+}
+
+.ap__modal .modal-content {
+    padding: var(--size-48px);
+}
+
+.modal-form__wrapper .form-textarea {
+    min-height: var(--size-88px);
+}
+
+.attach-icon {
+    margin-right: var(--size-12px);
+}
+
+.ap__modal .modal-footer {
+    margin-top: var(--size-40px);
+}
+
+.ap__modal .btn-close {
+    right: 24px;
+    top: 24px;
+}
+
+/* Hero */
+
+.page-hero {
+    background-image: url(../img/ap-bg.png);
+}
+
+/* Apply Jobs */
+.apply-jobs {
+    padding-block: var(--size-120px) var(--size-180px);
+}
+
+/* Apply Now List */
+
+.apply-now-job {
+    padding: var(--size-32px) var(--size-40px);
+    border: 1px solid var(--clr-gray-300);
+    /* gap: var(--size-40px); */
+}
+
+.apply-now-job:hover {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+     0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+
+.job-name {
+    line-height: var(--size-30px);
+}
+/* .apply-now-job:first-child {
+    flex-grow: 1;
+}
+
+.apply-now-job:last-child {
+
+} */
+
+.job-detail {
+    line-height: var(--size-21px);
+}
+
+.job-detail:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -12px;
+    background-color: var(--clr-gray-700);
+    width: 1px;
+    height: 12px;
+}
+
+/* Send CV */
+
+.send-cv {
+    padding-inline: var(--size-26px);
+}
+
+.send-cv__title {
+    line-height: var(--size-42px);
+}
+
+.send-cv-p {
+    line-height: var(--size-27px);
+}
+
+.send-cv__buttons {
+    gap: var(--size-30px);
+}
+
+.send-cv__buttons > * {
+
+    min-width: unset;
+    flex-basis: 100%;
+}
+
+/* Employee Benefits */
+
+.employee-benefits {
+    padding-bottom: var(--size-180px);
+}

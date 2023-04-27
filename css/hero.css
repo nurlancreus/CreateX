@@ -1,0 +1,14 @@
+.page-hero {
+    --size-172px: 10.75rem;
+
+    padding-block: var(--size-172px) var(--size-180px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+.page-header {
+    --size-600px: 37.5rem;
+    max-width: var(--size-600px);
+    margin-top: var(--size-40px);
+}

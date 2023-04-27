@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Construction Company">
+    <meta name="keywords" content="Construction, Buildings, Stores, Services">
+    <meta name="author" content="Nurlan Shukurov">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
+    <title>CreateX</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Css links -->
+    <!-- Buttons Css -->
+    <link rel="stylesheet" href="css/buttons.css">
+    <!-- Utilities Css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Responsive Css -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="header-filler"></div>
+    <header class="main-header position-absolute top-0 start-0 end-0">
+        <div class="header__container custom-container container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid p-0">
+                    <a class="navbar-brand m-0" href="index.html"><img src="img/logo.svg" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text--gray-800 fw-700 p-0" href="about-us-page/about-us.html">About
+                                    Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text--gray-800 fw-700 p-0"
+                                    href="services-page/services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text--gray-800 fw-700 p-0" href="work-page/our-work.html">Work</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text--gray-800 fw-700 p-0" href="news-page/news.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text--gray-800 fw-700 p-0"
+                                    href="contacts-page/contact-us.html">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__contact align-items-center text--gray-900">
+                        <div class="call-us d-flex align-items-center">
+                            <div class="iphone-icon"><img src="img/iPhone.svg" alt="phone"></div>
+                            <div>
+                                <span class="contact-us-text fs-14 fw-700 d-block">Call us</span>
+                                <span class="contact-us-with fs-18">(405) 555-0128</span>
+                            </div>
+                        </div>
+                        <div class="talk-us d-flex align-items-center">
+                            <div class="iphone-icon"><img src="img/Chat.svg" alt="chat"></div>
+                            <div>
+                                <span class="contact-us-text fs-14 fw-700 d-block">Talk to us</span>
+                                <span class="contact-us-with fs-18">hello@createx.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="carousel-cover position-relative">
+                <div id="hero__carousel" class="custom-carousel carousel slide">
+                    <div class="carousel-indicators justify-content-start">
+                        <button type="button" data-bs-target="#hero__carousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1">
+                        </button>
+                        <button type="button" data-bs-target="#hero__carousel" data-bs-slide-to="1"
+                            class="hero__carousel-indicator" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#hero__carousel" data-bs-slide-to="2"
+                            class="hero__carousel-indicator" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#hero__carousel" data-bs-slide-to="3"
+                            class="hero__carousel-indicator" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/carouselimg.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carouselimg.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carouselimg.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carouselimg.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <div class="carousel-control-prev h-100 d-flex alignt-items-center">
+                        <button class="carousel-control position-absolute border-0" type="button"
+                            data-bs-target="#hero__carousel" data-bs-slide="prev">
+                            <img src="img/Left.svg" alt="">
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                    </div>
+                    <div class="carousel-control-next h-100 d-flex alignt-items-center">
+                        <button class="carousel-control position-absolute border-0" type="button"
+                            data-bs-target="#hero__carousel" data-bs-slide="next">
+                            <img src="img/Right.svg" alt="">
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="carousel-overlayer position-absolute top-0 start-0 bottom-0 end-0">
+                    <div class="custom-container container text-neutral-100">
+                        <div class="carousel-overlayer__content">
+                            <h1 class="hero__title fs-72 fw-700">CREATE<span class="text-clr-primary">X</span>
+                                CONSTRUCTION</h1>
+                            <p class="hero__description fs-20 mt-4">Cras ultrices leo vitae non viverra. Fringilla nisi
+                                quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget
+                                pellentesque integer ipsum elementum felis. </p>
+                            <div class="hero__buttons d-flex text-uppercase">
+                                <a href="#"
+                                    class="learn-more outlined-button large-btn custom-button text-neutral-100 fw-700 text-decoration-none">Learn
+                                    more about us</a>
+                                <button
+                                    class="hero__submit filled-button large-btn custom-button text-neutral-100 fw-700">SUBMIT
+                                    REQUEST</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="we-are-createx text-center" aria-labelledby="we-are-createx">
+            <div class="we-are-createx__container custom-container container">
+                <header class="section__header">
+                    <h2 id="we-are-createx" class="section__title fs-40 text--gray-900 fw-700 m-0">We are Createx
+                        Construction Bureau </h2>
+                    <p class="section__subtitle fs-18 text--gray-700">We are rightfully considered to be the best
+                        construction company in the USA. </p>
+                </header>
+                <div class="video__wrapper overflow-hidden">
+                    <img src="img/video.png" class="h-100 w-100 object-fit-cover" alt="Video">
+                </div>
+            </div>
+        </section>
+        <section class="our-values text-center" aria-labelledby="our-core-values">
+            <div class="our-values__container custom-container container">
+                <header class="section__header">
+                    <h2 id="our-core-values" class="section__title fs-40 text--gray-900 fw-700 m-0">Our core values
+                    </h2>
+                    <p class="section__subtitle fs-18 text--gray-700">Our mission is to set the highest standards for
+                        construction sphere. </p>
+                </header>
+                <div class="values row mx-0">
+                    <div class="value col-md-12 col-lg position-relative d-flex flex-column align-items-center p-0">
+                        <a href="" class="text-decoration-none">
+                            <div class="value_img"><img src="img/ic-like.svg" alt=""></div>
+                            <h3 class="value-item__title text--gray-900 fs-20 fw-700">Quality</h3>
+                            <p class="value-item__text text--gray-700 m-0">Culpa nostrud commodo ea consequat aliquip
+                                reprehenderit. Veniam velit nostrud aliquip sunt.</p>
+                        </a>
+                    </div>
+                    <div class="value col-md-12 col-lg position-relative d-flex flex-column align-items-center p-0">
+                        <a href="" class="text-decoration-none">
+                            <div class="value_img"><img src="img/ic-hand.svg" alt=""></div>
+                            <h3 class="value-item__title text--gray-900 fs-20 fw-700">Safety</h3>
+                            <p class="value-item__text text--gray-700 m-0">Anim reprehenderit sint voluptate
+                                exercitation
+                                adipisicing laborum adipisicing. Minim empor est ea.</p>
+                        </a>
+                    </div>
+                    <div class="value col-md-12 col-lg position-relative d-flex flex-column align-items-center p-0">
+                        <a href="" class="text-decoration-none">
+                            <div class="value_img"><img src="img/ic-slippers.svg" alt=""></div>
+                            <h3 class="value-item__title text--gray-900 fs-20 fw-700">Comfort</h3>
+                            <p class="value-item__text text--gray-700 m-0">Sit veniam aute dolore adipisicing nulla sit
+                                culpa. Minim mollit voluptate ullamco proident ea ad.</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="ask-question bg-neutral-100 position-relative" aria-labelledby="ask-question">
+                    <form action="">
+                        <h4 id="ask-question" class="ask-q__title text--gray-900 fs-28 fw-700">
+                            Want to know more? Ask us a question:
+                        </h4>
+                        <div class="form__wrapper text-start d-flex align-items-end">
+                            <div class="form-element col-3">
+                                <label for="ask-q-name" class="form-label text--gray-800 fs-14">Name</label>
+                                <input type="text" class="form-control" id="ask-q-name" placeholder="Your name">
+                            </div>
+                            <div class="form-element col-3">
+                                <label for="ask-q-phone" class="form-label text--gray-800 fs-14">Phone</label>
+                                <input type="text" class="form-control" id="ask-q-phone" placeholder="Your phone">
+                            </div>
+                            <div class="form-element col-4">
+                                <label for="ask-q-message" class="form-label text--gray-800 fs-14">Message</label>
+                                <textarea class="form-control noresize" id="ask-q-message"
+                                    placeholder="Your message"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="ask-q-form__btn custom-button regular-btn filled-button text-neutral-100 fs-14 fw-700 text-uppercase col-auto">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="our-services text-center" aria-labelledby="our-services">
+            <div class="our-services__container custom-container container">
+                <header class="section__header">
+                    <h2 id="our-services" class="section__title fs-40 text--gray-900 fw-700 m-0">Our services </h2>
+                    <p class="section__subtitle fs-18 text--gray-700">Createx Construction Bureau is a construction
+                        giant with a full range of construction services.</p>
+                </header>
+                <div class="services__items d-flex row m-0">
+                    <div
+                        class="service-item bg-neutral-100 col rounded-2 position-relative transition-200 overflow-hidden p-0">
+                        <a href="">
+                            <img src="img/image.png" class="w-100 h-100 object-fit-cover" alt="">
+                            <div class="service-item__content position-absolute bg-neutral-100">
+                                <div>
+                                    <img src="img/ic-construction.svg" class="service-item__icon" alt="">
+                                    <img src="img/hover1.svg" class="service-item__icon--hover d-none" alt="">
+                                </div>
+                                <h3 class="service-item__title text--gray-900 fs-20 fw-700">Construction</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="service-item bg-neutral-100 col rounded-2 position-relative transition-200 overflow-hidden p-0">
+                        <a href="">
+                            <img src="img/image.png" class="w-100 h-100 object-fit-cover" alt="">
+                            <div class="service-item__content position-absolute bg-neutral-100">
+                                <div>
+                                    <img src="img/ic-plan.svg" class="service-item__icon" alt="">
+                                    <img src="img/hover2.svg" class="service-item__icon--hover d-none" alt="">
+                                </div>
+                                <h3 class="service-item__title text--gray-900 fs-20 fw-700">Project Development</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="service-item bg-neutral-100 col rounded-2 position-relative transition-200 overflow-hidden p-0">
+                        <a href="services-page/interior-design.html">
+                            <img src="img/image.png" class="w-100 h-100 object-fit-cover" alt="">
+                            <div class="service-item__content position-absolute bg-neutral-100">
+                                <div>
+                                    <img src="img/ic-pantone.svg" class="service-item__icon" alt="">
+                                    <img src="img/hover3.svg" class="service-item__icon--hover d-none" alt="">
+                                </div>
+                                <h3 class="service-item__title text--gray-900 fs-20 fw-700">Interior Design</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div
+                        class="service-item bg-neutral-100 col rounded-2 position-relative transition-200 overflow-hidden p-0">
+                        <a href="">
+                            <img src="img/image.png" class="w-100 h-100 object-fit-cover" alt="">
+                            <div class="service-item__content position-absolute bg-neutral-100">
+                                <div>
+                                    <img src="img/ic-painting.svg" class="service-item__icon" alt="">
+                                    <img src="img/hover4.svg" class="service-item__icon--hover d-none" alt="">
+                                </div>
+                                <h3 class="service-item__title text--gray-900 fs-20 fw-700">Repairs</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="learn-more-about-services">
+                    <span class="learn-more-span d-inline-block text--gray-900 fs-28 fw-700">Learn more about our
+                        services</span>
+                    <a href="#"
+                        class="learn-more-btn custom-button large-btn d-inline-block filled-button text-neutral-100 text-uppercase text-decoration-none">View
+                        Services</a>
+                </div>
+            </div>
+        </section>
+        <section class="browse-our-projects" aria-labelledby="browse-our-projects">
+            <div class="browse-our-projects__container custom-container container">
+                <header class="section__header d-flex justify-content-between align-items-end">
+                    <h2 id="browse-our-projects"
+                        class="browse-our-projects__title section__title fs-40 text--gray-900 fw-700 m-0 text-start">
+                        Browse our selected projects
+                        and learn more about our work</h2>
+                    <div class="next-prev-btns d-flex align-items-center">
+                        <button class="prev-btn outlined-button rounded-circle border-0 bg-neutral-100"><img
+                                src="img/prev-btn.svg" class="btn-icon" alt=""><img src="img/prev-white.svg"
+                                class="btn-icon--hover d-none" alt=""></button>
+                        <button class="next-btn outlined-button rounded-circle border-0 bg-neutral-100"><img
+                                src="img/next-btn.svg" class="btn-icon" alt=""><img src="img/next-white.svg"
+                                class="btn-icon--hover d-none" alt=""></button>
+                    </div>
+                </header>
+                <div class="our-projects text-center row">
+                    <div class="project-card rounded-2 overflow-hidden position-relative transition-200 col">
+                        <a href="" class="text-decoration-none">
+                            <div class="project-img overflow-hidden">
+                                <img src="img/building1.png" class="w-100 h-100 object-fit-cover" alt="">
+                            </div>
+                            <div class="position-filler"></div>
+                            <div class="project-info bg-neutral-100 position-absolute">
+                                <h3 class="project__title text--gray-900 fs-20 fw-700">Red Finger Building</h3>
+                                <p class="project__text text--gray-700 fs-14">Business Centers</p>
+                                <a href=""
+                                    class="view-project-btn custom-button regular-btn d-inline-block outlined-button text-clr-primary fs-14 fw-700 text-decoration-none text-uppercase">View
+                                    Project</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-card rounded-2 overflow-hidden position-relative transition-200 col">
+                        <a href="" class="text-decoration-none">
+                            <div class="project-img overflow-hidden">
+                                <img src="img/building2.png" class="w-100 h-100 object-fit-cover" alt="">
+                            </div>
+                            <div class="position-filler"></div>
+                            <div class="project-info bg-neutral-100 position-absolute">
+                                <h3 class="project__title text--gray-900 fs-20 fw-700">Cubes Building</h3>
+                                <p class="project__text text--gray-700 fs-14">Business Centers</p>
+                                <a href=""
+                                    class="view-project-btn custom-button regular-btn d-inline-block outlined-button text-clr-primary fs-14 fw-700 text-decoration-none text-uppercase">View
+                                    Project</a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project-card rounded-2 overflow-hidden position-relative transition-200 col">
+                        <a href="" class="text-decoration-none">
+                            <div class="project-img overflow-hidden">
+                                <img src="img/building3.png" class="w-100 h-100 object-fit-cover" alt="">
+                            </div>
+                            <div class="position-filler"></div>
+                            <div class="project-info bg-neutral-100 position-absolute">
+                                <h3 class="project__title text--gray-900 fs-20 fw-700">The Pencil Building</h3>
+                                <p class="project__text text--gray-700 fs-14">Stores & Malls</p>
+                                <a href=""
+                                    class="view-project-btn custom-button regular-btn d-inline-block outlined-button text-clr-primary fs-14 fw-700 text-decoration-none text-uppercase">View
+                                    Project</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="explore-all d-flex align-items-center justify-content-center">
+                    <p class="explore-p text--gray-900 fs-28 fw-700 m-0">Explore all our works</p>
+                    <a href=""
+                        class="view-all-btn large-btn custom-button filled-button text-neutral-100 fs-14 fw-700 d-inline-block text-decoration-none text-center text-uppercase">View
+                        Portfolio</a>
+                </div>
+            </div>
+        </section>
+        <section class="our-partners bg-gray-200" aria-label="Our partners and clients">
+            <div class="our-partners__container custom-container container text-center">
+                <header class="section__header">
+                    <h2 class="section__title fs-46 fw-700 m-0">
+                        Supported by 12+ partners
+                    </h2>
+                </header>
+                <div class="client-logos d-flex flex-wrap align-items-center justify-content-between">
+                    <div><a href=""><img src="img/client-logo.svg" alt=""></a></div>
+                    <div><a href=""><img src="img/client-logo2.svg" alt=""></a></div>
+                    <div><a href=""><img src="img/client-logo3.svg" alt=""></a></div>
+                    <div><a href=""><img src="img/client-logo4.svg" alt=""></a></div>
+                    <div><a href=""><img src="img/client-logo5.svg" alt=""></a></div>
+                    <div><a href=""><img src="img/client-logo6.svg" alt=""></a></div>
+                </div>
+                <article class="what-our-clients-said text-start row position-relative ms-0 me-0">
+                    <div class="our-client col p-0">
+                        <header class="article__header">
+                            <h3 class="wocs__title text--gray-900 fs-46 fw-700">What our clients are saying</h3>
+                        </header>
+                        <div class="client-pp rounded-circle overflow-hidden">
+                            <img src="img/profile-image.png" alt="profile image">
+                        </div>
+                        <p class="our-client-words text--gray-800 mt-4 mb-4">
+                            Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur
+                            magna cillum consequat minim laboris cillum laboris voluptate minim proident exercitation
+                            ullamco.
+                        </p>
+                        <div class="d-flex align-items-end justify-content-between">
+                            <div class="about-our-client">
+                                <p class="our-client-name text--gray-900 fw-700 mb-1">Shawn Edwards</p>
+                                <span class="our-client-company text--gray-700 fs-14">Position, Company name</span>
+                            </div>
+                            <div class="next-prev-btns d-flex align-items-center">
+                                <button class="prev-btn outlined-button bg-gray-200 rounded-circle border-0"><img
+                                        src="img/prev-btn.svg" class="btn-icon" alt=""><img src="img/prev-white.svg"
+                                        class="btn-icon--hover d-none" alt=""></button>
+                                <button class="next-btn outlined-button bg-gray-200 rounded-circle border-0"><img
+                                        src="img/next-btn.svg" class="btn-icon" alt=""><img src="img/next-white.svg"
+                                        class="btn-icon--hover d-none" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="our-client-title-img col p-0">
+                        <div class="title-img__wrapper overflow-hidden">
+                            <img src="img/cleint.png" class="w-100 h-100 object-fit-cover" alt="">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="some-facts-section" aria-labelledby="some-facts">
+            <div class="some-facts__container custom-container container text-center">
+                <header class="section__header">
+                    <h2 id="some-facts" class="section__title fs-46 fw-700 m-0">
+                        Some facts and figures
+                    </h2>
+                </header>
+                <div class="figures d-flex align-items-center justify-content-center">
+                    <div><img src="img/figure1.svg" alt=""></div>
+                    <div><img src="img/figure2.svg" alt=""></div>
+                    <div><img src="img/figure3.svg" alt=""></div>
+                    <div><img src="img/figure4.svg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="recent-news" aria-labelledby="recent-news">
+            <div class="recent-news__container custom-container container">
+                <header class="section__header">
+                    <h2 id="recent-news" class="section__title fs-46 fw-700 m-0 text-center">
+                        Recent news
+                    </h2>
+                </header>
+                <div class="news-collection">
+                    <div class="news transition-200 rounded-2 overflow-hidden">
+                        <a href="" class="text-decoration-none">
+                            <div class="news-img"><img src="img/news1.png" alt="news pgoto"></div>
+                            <div class="news-content p-4">
+                                <h3 class="news-title text--gray-900 fs-20 fw-700 transition-200">How to Build Climate
+                                    Change-Resilient Infrastructure</h3>
+                                <div class="news-details d-flex my-0 align-items-center">
+                                    <span class="d-inline-block position-relative fs-14 text--gray-700">Industry
+                                        News</span>
+                                    <span class="d-inline-block position-relative fs-14 text--gray-700">June 24,
+                                        2020</span>
+                                    <span class="d-inline-block position-relative fs-14 text--gray-700"><img
+                                            src="img/Chatnews.svg" alt=""> 4 comments</span>
+                                </div>
+                                <p class="news-text text--gray-800 mt-3 mb-0">
+                                    Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt
+                                    aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis enim, nibh
+                                    convallis...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news transition-200 rounded-2 overflow-hidden">
+                        <a href="" class="text-decoration-none">
+                            <div class="news-img"><img src="img/news2.png" alt="news pgoto"></div>
+                            <div class="news-content p-4">
+                                <h3 class="news-title mb-2 text--gray-900 fs-20 fw-700 transition-200">How Construction
+                                    Can
+                                    Help Itself</h3>
+                                <div class="news-details d-flex my-0 align-items-center">
+                                    <span
+                                        class="d-inline-block position-relative fs-14 text--gray-700">Innovation</span>
+                                    <span class="d-inline-block position-relative fs-14 text--gray-700">June 24,
+                                        2020</span>
+                                    <span class="d-inline-block position-relative fs-14 text--gray-700"><img
+                                            src="img/Chatnews.svg" alt=""> no comments</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news transition-200 rounded-2 overflow-hidden">
+                        <a href="" class="text-decoration-none">
+                            <div class="news-img"><img src="img/news3.png" alt="news pgoto"></div>
+                            <div class="news-content p-4">
+                                <h3 class="news-title mb-2 text--gray-900 fs-20 fw-700 transition-200">Types of Flooring
+                                    Materials</h3>
+                                <div class="news-details d-flex my-0 align-items-center">
+                                    <span class="d-inline-block position-relative fs-14 text--gray-700">Company
+                                        News</span>
+                                    <span class="d-inline-block position-relative fs-14 text--gray-700">June 24,
+                                        2020</span>
+                                    <span class="d-inline-block position-relative fs-14 text--gray-700"><img
+                                            src="img/Chatnews.svg" alt=""> no comments</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="explore-all d-flex align-items-center justify-content-center">
+                <p class="explore-p text--gray-900 fs-28 fw-700 m-0">Explore all our news post</p>
+                <a href=""
+                    class="view-all-btn large-btn custom-button filled-button text-neutral-100 fs-14 fw-700 d-inline-block text-decoration-none text-center text-uppercase">View
+                    All News</a>
+            </div>
+        </section>
+        <section class="main-form">
+            <div class="main-form__container custom-container container">
+                <form action="">
+                    <div class="main-form__wrapper bg-neutral-100 ms-auto">
+                        <div class="form-header text-center">
+                            <h4 class="form__title text--gray-900 fs-28 fw-700 mb-4">A quick way to discuss details</h4>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="main-form__name"
+                                class="form-label text--gray-800 fs-14">Name<sup>*</sup></label>
+                            <input type="text" class="form-control bg-gray-200 rounded-2" id="main-form__name"
+                                name="main-form__name" placeholder="Your name">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="main-form__phone"
+                                class="form-label text--gray-800 fs-14">Phone<sup>*</sup></label>
+                            <input type="tel" class="form-control bg-gray-200 rounded-2" id="main-form__phone"
+                                name="main-form__phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                                placeholder="Your phone number">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="main-form__email" class="form-label text--gray-800 fs-14">Email</label>
+                            <input type="email" class="form-control bg-gray-200 rounded-2" id="main-form__email"
+                                name="main-form__email" placeholder="Your working email">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="main-form__message"
+                                class="form-label text--gray-800 fs-14">Message<sup>*</sup></label>
+                            <textarea class="form-control bg-gray-200 form-textarea noresize rounded-2"
+                                id="main-form__message" name="main-form__message" rows="3">Your message</textarea>
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-checkbox d-flex align-items-start"><span class="text--gray-800 fs-14">I
+                                    agree to receive communications from Createx Construction
+                                    Bureau.</span>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <button type="submit"
+                            class="custom-button regular-btn d-block filled-button text-neutral-100 fw-700 text-center text-uppercase fs-14 mx-auto">Send
+                            request</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer bg-gray-900">
+        <div class="footer__container custom-container container">
+            <div class="footer-grid">
+                <div class="footer-about-us" aria-label="Our Social Links">
+                    <div class="footer-logo-links d-flex mb-4">
+                        <div class="footer-logo"><a href="index.html"><img src="img/logo-light.svg"
+                                    alt="Footer logo"></a></div>
+                        <div class="footer-links">
+                            <ul class="footer-links__ul list-unstyled ps-0 d-flex">
+                                <li><a href=""><img src="img/Whatsapp.svg" class="f__social-link-icon" alt=""><img
+                                            src="img/Whatsapphover.svg" class="f__social-link-icon-hover d-none" alt="">
+                                    </a></li>
+                                <li><a href=""><img src="img/Messanger.svg" class="f__social-link-icon" alt=""><img
+                                            src="img/Messangerhover.svg" class="f__social-link-icon-hover d-none"
+                                            alt=""> </a></li>
+                                <li><a href=""><img src="img/Facebook.svg" class="f__social-link-icon" alt=""><img
+                                            src="img/Facebookhover.svg" class="f__social-link-icon-hover d-none" alt="">
+                                    </a></li>
+                                <li><a href=""><img src="img/Twitter.svg" class="f__social-link-icon" alt=""><img
+                                            src="img/Twitterhover.svg" class="f__social-link-icon-hover d-none" alt="">
+                                    </a></li>
+                                <li><a href=""><img src="img/YouTube.svg" class="f__social-link-icon" alt=""><img
+                                            src="img/YouTubehover.svg" class="f__social-link-icon-hover d-none" alt="">
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="footer-about-us__text text-neutral-60 fs-14 mb-0">Createx Construction Bureau has been
+                        successfully operating in the USA construction market since
+                        2000. We are proud to offer you quality construction and exemplary service. Our mission is to
+                        set
+                        the highest standards for construction sphere.</p>
+                </div>
+                <div class="footer-contact-us" aria-labelledby="our-address">
+                    <p id="our-address" class="text-neutral-100 fw-700 text-uppercase mb-2">Head Office</p>
+                    <p class="mb-1 text-neutral-60"><span class="text-neutral-100">Address: </span> 8502 Preston Rd.
+                        Inglewood, New York</p>
+                    <p class="mb-1"><span class="text-neutral-100">Call: </span> <a href=“tel:+(405)555-0128”
+                            class="text-decoration-none text-neutral-60">(405) 555-0128 </a></p>
+                    <p class="mb-1"><span class="text-neutral-100">Email: </span><a href="mailto:hello@createx.com"
+                            class="text-decoration-none text-neutral-60">hello@createx.com</a></p>
+                </div>
+                <div class="who-we-are" aria-labelledby="who-we-are">
+                    <p id="who-we-are" class="text-neutral-100 fw-700 text-uppercase mb-2">Who we are</p>
+                    <ul class="who-we-are__ul list-unstyled ps-0">
+                        <li class="mb-1"><a href="" class="text-neutral-60 text-decoration-none ">About Us</a></li>
+                        <li class="mb-1"><a href="" class="text-neutral-60 text-decoration-none ">Available
+                                Positions</a>
+                        </li>
+                        <li class="mb-1"><a href="" class="text-neutral-60 text-decoration-none ">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="stay-in-touch" aria-labelledby="stay-in-touch">
+                    <p id="stay-in-touch" class="text-neutral-100 fs-24 fw-700 mb-4">Let's stay in touch</p>
+                    <form action="">
+                        <div class="footer-form__wrapper d-flex mb-3 rounded-2 overflow-hidden">
+                            <input type="email" class="form-control rounded-0" id="footer-mail" name="footer-mail"
+                                placeholder="Your email addres" aria-describedby="email">
+                            <button type="submit"
+                                class="footer-btn custom-button regular-btn filled-button fw-700 rounded-0 text-neutral-100 text-uppercase fs-14">Subscribe</button>
+                        </div>
+                        <span class="text-neutral-60 fs-12">* Subscribe to our newsletter to receive communications and
+                            early updates from Createx Construction Bureau.</span>
+                    </form>
+                </div>
+                <div class="our-experiences" aria-labelledby="our-experience">
+                    <p id="our-experience" class="text-neutral-100 fw-700 text-uppercase mb-2">OUR EXPERIENCE</p>
+                    <ul class="our-experiences__ul list-unstyled ps-0">
+                        <li class="mb-1"><a href="" class="text-neutral-60 text-decoration-none ">Services</a></li>
+                        <li class="mb-1"><a href="" class="text-neutral-60 text-decoration-none ">Work</a>
+                        </li>
+                        <li class="mb-1"><a href="" class="text-neutral-60 text-decoration-none ">News</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-scroll d-flex align-items-end justify-content-between" aria-labelledby="all-rights">
+                <span id="all-rights" class="text-neutral-100 fs-12">&copy; All rights reserved. Made with <img
+                        src="img/Heart.svg" alt="Heart"> by Createx Studio</span>
+                <span><a href="#"
+                        class="text-neutral-100 text fs-14 d-flex align-items-end text-decoration-none text-uppercase">Go
+                        to Top<img src="img/up-btn.svg" class="ms-3" alt=""></a></span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

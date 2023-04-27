@@ -1,0 +1,141 @@
+/* Hero */
+
+.page-hero {
+    background-image: url(../img/contactsbg.png);
+}
+
+/* Contact Us */
+
+.contact-us {
+    padding-block: var(--size-120px);
+}
+
+.cu-form__img {
+    --size-586px: 36.625rem;
+
+    height: var(--size-586px);
+}
+
+/* Contact Us Form */
+.cu-form__wrapper {
+    display: grid;
+    grid-template-areas: 
+    "name select-interest"
+    "phone select-location"
+    "email radio"
+    "cu-textarea cu-textarea"
+    "check-submit check-submit";
+    grid-auto-columns: 1fr;
+
+    column-gap: var(--size-30px);
+    row-gap: var(--size-24px);
+}
+
+.input-wrapper[data-form="name"] {
+    grid-area: name;
+}
+
+.input-wrapper[data-form="select-interest"] {
+    grid-area: select-interest;
+}
+
+.input-wrapper[data-form="phone"] {
+    grid-area: phone;
+}
+
+.input-wrapper[data-form="select-location"] {
+    grid-area: select-location;
+}
+
+.input-wrapper[data-form="email"] {
+    grid-area: email;
+}
+
+.cu-form__radio-label {
+    margin-bottom: var(--size-20px);
+}
+
+.input-wrapper[data-form="radio"] {
+    grid-area: radio;
+}
+
+.input-wrapper[data-form="textarea"] {
+    grid-area: cu-textarea;
+}
+
+.input-wrapper[data-form="check-submit"] {
+    grid-area: check-submit;
+}
+
+.cu-form__wrapper .form-control {
+    height: var(--size-52px);
+}
+
+.cu-form__wrapper .form-textarea {
+    min-height: var(--size-128px);
+}
+.check-btn__wrapper {
+    margin-top: var(--size-16px);
+}
+
+.check-btn__wrapper > *:first-child {
+    flex-basis: 55%;
+}
+
+.radio-group {
+    gap: var(--size-24px);
+}
+
+/* Our Offices */ 
+
+.our-offices-section {
+    padding-block: var(--size-80px) var(--size-96px);
+}
+
+.our-offices {
+    gap: var(--size-240px);
+    margin-bottom: var(--size-120px);
+}
+
+.office:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    width: var(--size-240px);
+    right: calc(var(--size-240px) * -1);
+    height: 1px;
+    transform: rotate(90deg);
+    background: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%,
+            rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+ 
+}
+.office__title {
+    line-height: var(--size-42px);
+}
+
+:is(.office__location, .office__address, .office__contacts > *) {
+    line-height: var(--size-26px);
+}
+
+:is(.office__address, .office__contacts > *:not(:last-child)) {
+    margin-bottom: 0.25rem;
+}
+
+/* Find us */
+
+.find-us__title {
+    line-height: var(--size-60px);
+    margin-bottom: var(--size-40px);
+}
+
+.find-us-social__ul {
+    gap: var(--size-24px);
+}
+
+:is(.find-us-social__ul > *:hover .find-us__img, .find-us__img-hover) {
+    display: none;
+}
+
+.find-us-social__ul > *:hover .find-us__img-hover {
+    display: inline;
+}

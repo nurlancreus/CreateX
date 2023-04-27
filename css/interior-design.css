@@ -1,0 +1,118 @@
+.page-hero {
+  background-image: url(../img/id-bg.png);
+}
+
+/* Offerings */
+
+.offerings {
+  padding-block: var(--size-120px) var(--size-180px);
+  gap: var(--size-104px);
+}
+
+.offerings__img {
+  --size-440px: 27.5rem;
+
+  height: var(--size-440px);
+}
+
+.offerings__title {
+  margin-bottom: var(--size-60px);
+}
+
+/* How We Do */
+
+.how-we-do-it {
+  padding-bottom: var(--size-120px);
+}
+
+.doing-ways {
+  gap: var(--size-30px);
+  counter-reset: way-count;
+}
+
+.way::before {
+  counter-increment: way-count;
+  content: "0" counter(way-count);
+  color: var(--clr-gray-400);
+  font-size: var(--fs-46px);
+  line-height: var(--size-60px);
+  font-weight: var(--fw-700);
+  border-radius: 50%;
+  padding: var(--size-16px);
+  transition: all .2s ease;
+}
+
+.way:hover::before {
+  animation: shadow-pulse 1s infinite;
+  background-color: rgba(255, 89, 48, 0.12);
+  color: var(--clr-primary);
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0px 0px rgba(255, 89, 48, 0.12);
+  }
+
+  100% {
+    box-shadow: 0 0 0 14px rgba(255, 89, 48, 0.06);
+  }
+}
+
+/* Our Benefits */
+
+.our-benefits {
+  padding-block: var(--size-80px) var(--size-128px);
+}
+
+.benefit:not(:last-child)::after {
+  background: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%, rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
+}
+
+.discuss-project {
+  padding-inline: var(--size-112px);
+  bottom: 0;
+  transform: translateY(50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* Related Projects */
+
+.related-projects {
+  padding-block: var(--size-180px) var(--size-100px);
+}
+
+.our-projects {
+  margin-inline: calc(var(--size-15px) * -1)!important;
+}
+
+.project-card {
+  padding-inline: var(--size-15px)!important;
+}
+
+/* Pricing */
+
+.pricing {
+  padding-block: var(--size-80px) var(--size-110px)
+}
+
+/* Pricing Table */
+
+.pricing__table {
+  border-color: var(--clr-gray-300);
+}
+
+.pricing__table tr:nth-child(odd) {
+  background-color: var(--clr-neutral-100);
+}
+
+:is(.pricing__table tr:first-child>*, .pricing__table tr:last-child>*) {
+  padding-block: var(--size-32px);
+}
+
+/* Our Partners */
+
+.our-partners {
+  padding-block: var(--size-120px) var(--size-110px);
+}

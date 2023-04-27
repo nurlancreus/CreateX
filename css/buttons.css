@@ -1,0 +1,50 @@
+.custom-button {
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    transition: all .2s ease;
+    border: 1px solid transparent;
+    white-space: nowrap;
+}
+
+.large-btn {
+    padding: 0 var(--size-42px);
+    line-height: var(--size-52px);
+    height: var(--size-52px);
+    min-width: var(--size-210px);
+}
+
+.regular-btn {
+    padding: 0 var(--size-32px);
+    line-height: var(--size-44px);
+    height: var(--size-44px);
+    /* min-width: var(--size-198px); */
+}
+
+.small-btn {
+    padding: 0 var(--size-32px);
+    line-height: var(--size-36px);
+    height: var(--size-36px);
+    min-width: var(--size-148px);
+}
+
+.outlined-button {
+    --outlined-btn-border-clr: var(--clr-primary);
+
+    border-color: var(--outlined-btn-border-clr)!important;
+}
+
+.outlined-button:hover {
+    --bg-clr: var(--clr-primary);
+    --txt-clr: var(--clr-neutral-100);
+
+    background-color: var(--bg-clr)!important;
+    color: var(--txt-clr)!important;
+}
+
+.filled-button {
+    background-color: var(--clr-primary);
+}
+
+.filled-button:hover {
+    background-color: var(--clr-crimson);
+}

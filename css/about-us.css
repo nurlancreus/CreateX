@@ -1,0 +1,167 @@
+/* Hero */
+
+.page-hero {
+    background-image: url(../img/abtusbg.png);
+}
+
+/* General Info */
+
+.general-info {
+    padding-block: var(--size-100px) var(--size-120px);
+}
+
+.gi__even-columns {
+    --size-892px: 55.75rem;
+
+    max-width: var(--size-892px);
+    gap: var(--size-88px);
+}
+
+.gi-item__count {
+    line-height: var(--size-60px);
+    margin-top: var(--size-20px);
+}
+
+.gi-item__desc {
+    line-height: var(--size-21px);
+}
+
+/* CEO */
+
+.about-ceo {
+    margin-top: var(--size-252px);
+}
+
+.quote {
+    line-height: var(--size-30px);
+    margin-bottom: var(--size-60px);
+}
+
+.quote::before {
+    content: url(../img/braces.svg);
+    position: absolute;
+    right: calc(100% + var(--size-30px));
+}
+
+:is(.name, .img-title) {
+    line-height: var(--size-26px);
+}
+
+.profession {
+    line-height: var(--size-21px);
+}
+
+.ceo-img {
+    --size-580px: 36.25rem;
+}
+
+.ceo-quote {
+    --size-76px: 4.75rem;
+
+    padding: var(--size-80px) var(--size-104px) var(--size-136px);
+    bottom: var(--size-120px);
+    right: var(--size-30px);
+    z-index: 1000;
+
+    box-shadow: 0px 4px 4px -4px #1E212C08;
+
+    box-shadow: 0px 12px 10px -6px #9A9CA50A;
+
+    box-shadow: 0px 30px 24px -10px #9A9CA50D;
+
+    box-shadow: 0px 80px 80px -20px #9A9CA514;
+}
+
+/* Our Core Values */
+
+.our-values-history {
+    padding: var(--size-80px) var(--size-80px);
+}
+
+:is(.values, .client-logos) {
+    margin-bottom: var(--size-180px);
+}
+
+/* Our History */
+
+.dates {
+    list-style-type: none;
+    max-width: fit-content;
+    position: relative;
+}
+
+.dates::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    width: 1px;
+    height: 100%;
+    background-color: var(--clr-gray-600);
+}
+
+.dates>li {
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: min-content 1fr;
+    gap: var(--size-32px);
+    margin-bottom: var(--size-20px);
+}
+
+.dates>li::before {
+    content: url(../img/ellipse.svg);
+    grid-column: 1/2;
+}
+
+.dates>li[aria-current="date"] {
+    color: var(--clr-primary);
+}
+
+.history__img {
+    --size-448px: 28rem;
+
+    height: var(--size-448px);
+}
+
+.img-title {
+    margin-top: var(--size-36px);
+}
+
+/* Our Clients & Partners */
+
+.our-partners {
+    padding-bottom: var(--size-120px);
+}
+
+/* Members */
+
+.our-team__members {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: var(--size-30px);
+    row-gap: var(--size-60px);
+    margin-bottom: var(--size-80px);
+}
+
+.member__img {
+    --size-340px: 21.25rem;
+
+    height: var(--size-340px);
+}
+
+/* Overlayer */
+
+.our-team__member:hover .member__overlay {
+    transform: translate(0);
+}
+
+.member__overlay {
+    padding-block: var(--size-20px);
+    transform: translateY(100%);
+    gap: var(--size-12px);
+}
+
+/* WE Work Worldwide */
+
+.we-work {
+    padding-block: var(--size-80px) var(--size-120px);
+}
