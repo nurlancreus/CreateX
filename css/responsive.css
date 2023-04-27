@@ -5,6 +5,7 @@
     }
 
     /* Footer */
+
     .footer-grid {
         --size-242px: 15.125rem;
 
@@ -96,7 +97,7 @@
     }
 
     :is(.ceo-quote, .ask-question) {
-        position: static!important;
+        position: static !important;
     }
 
     .general-info {
@@ -207,6 +208,15 @@
 /* Breakpoint: 768px */
 @media (max-width: 48rem) {
 
+    .ask-question-section {
+        position: static !important;
+    }
+
+    .ask-question-section .form__wrapper {
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+
     /* Hero */
 
     .page-hero {
@@ -219,6 +229,10 @@
 
     /* Abous US */
 
+    .client-logos {
+        margin-bottom: var(--size-120px);
+    }
+
     .our-team__members {
         column-gap: var(--size-20px);
     }
@@ -230,7 +244,17 @@
     .our-partners {
         padding-block: var(--size-80px);
     }
-   
+
+    /* Our Work */
+
+    .ow-clients {
+        padding-block: var(--size-160px) var(--size-40px);
+    }
+
+    .client-logos {
+        justify-content: center !important;
+    }
+
 
     /* Available Positions */
 
@@ -258,7 +282,7 @@
         padding-block: var(--size-60px);
     }
 
-    :is(.comments-section, .ow-clients, .services-page__items) {
+    :is(.comments-section .services-page__items) {
         padding-block: var(--size-60px) var(--size-80px);
     }
 

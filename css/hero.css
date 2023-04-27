@@ -9,6 +9,7 @@
 
 .page-header {
     --size-600px: 37.5rem;
+    
     max-width: var(--size-600px);
     margin-top: var(--size-40px);
 }

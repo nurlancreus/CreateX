@@ -10,8 +10,6 @@
     padding-block: var(--size-120px) var(--size-180px);
 }
 
-/* News */
-
 /* News Tabs */
 
 .news__items {
@@ -23,19 +21,19 @@
 }
 
 .news-tab .nav-link:hover {
-    color: var(--clr-primary)!important;
+    color: var(--clr-primary) !important;
 }
 
 .news-tab .active {
-    background-color: var(--clr-neutral-100)!important;
-    color: var(--clr-primary)!important;
+    background-color: var(--clr-neutral-100) !important;
+    color: var(--clr-primary) !important;
 }
 
 /* News items */
 
 .news__item {
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05),
-     0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
 }
 
 .news__item:hover .news__title {
@@ -56,11 +54,11 @@
     margin-top: var(--size-12px);
 }
 
-.news__details > * {
+.news__details>* {
     line-height: var(--size-21px);
 }
 
-.news__details > *:not(:last-child)::after {
+.news__details>*:not(:last-child)::after {
     content: "";
     position: absolute;
     right: -12px;
