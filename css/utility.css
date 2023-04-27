@@ -68,6 +68,10 @@
     background-color: var(--clr-gray-200);
 }
 
+.bg-gray-800 {
+    background-color: var(--clr-gray-800)!important;
+}
+
 .bg-gray-900 {
     background-color: var(--clr-gray-900);
 }
@@ -84,34 +88,42 @@
 
 .fs-18 {
     font-size: var(--fs-18px);
+    font-size: clamp(0.938rem, 0.604rem + 0.694vw, 1.125rem);
 }
 
 .fs-20 {
     font-size: var(--fs-20px);
+    font-size: clamp(1.125rem, 0.556rem + 0.926vw, 1.25rem);
 }
 
 .fs-24 {
     font-size: var(--fs-24px);
+    font-size: clamp(1.375rem, 1.153rem + 0.463vw, 1.5rem);
 }
 
 .fs-28 {
     font-size: var(--fs-28px)!important;
+    font-size: clamp(1.5rem, 1.056rem + 0.926vw, 1.75rem)!important;
 }
 
 .fs-40 {
     font-size: var(--fs-40px);
+    font-size: clamp(2.125rem, 1.111rem + 1.852vw, 2.5rem);
 }
 
 .fs-46 {
     font-size: var(--fs-46px);
+    font-size: clamp(2.5rem, 1.833rem + 1.389vw, 2.875rem);
 }
 
 .fs-64 {
     font-size: var(--fs-64px);
+    font-size: clamp(3.125rem, 1.569rem + 3.241vw, 4rem);
 }
 
 .fs-72 {
     font-size: var(--fs-72px);
+    font-size: clamp(3.625rem, 2.069rem + 3.241vw, 4.5rem);
 }
 
 /* Font Weight */

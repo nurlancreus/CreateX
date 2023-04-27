@@ -57,6 +57,7 @@
   --size-252px: 15.75rem;
   --size-240px: 15rem;
   --size-232px: 14.5rem;
+  --size-220px: 13.75rem;
   --size-212px: 13.25rem;
   --size-210px: 13.125rem;
   --size-198px: 12.375rem;
@@ -198,12 +199,6 @@ body {
   background-color: var(--bg-clr);
 }
 
-/* 
-.carousel-control {
-    position: absolute;
-    border: 0;
-} */
-
 .custom-carousel > .carousel-control-prev > .carousel-control {
   left: 1.5rem;
 }
@@ -214,10 +209,14 @@ body {
 
 /* Hero Overlayer */
 
+.carousel-container {
+  height: calc(100% - var(--size-220px));
+}
+
 .carousel-overlayer__content {
   --size-600px: 37.5rem;
 
-  margin-top: 13.75rem;
+  margin-top: var(--size-220px);
   max-width: var(--size-600px);
 }
 
@@ -250,8 +249,26 @@ body {
 
 /* Carousel Indicators */
 
-.custom-carousel .carousel-indicators [data-bs-target] {
+.custom-carousel .carousel-indicators {
+  margin-bottom: var(--size-120px);
+  counter-reset: indicator;
+}
+
+.custom-carousel .carousel-indicators > * {
   width: var(--size-180px);
+  position: relative;
+}
+
+.custom-carousel .carousel-indicators > *::before {
+  counter-increment: indicator;
+  content: "0"counter(indicator);
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 12px);
+  color: var(--clr-neutral-100);
+  line-height: var(--size-42px);
+  font-size: var(--fs-28px);
+  font-weight: var(--fw-700);
 }
 
 /* We are Createx */
