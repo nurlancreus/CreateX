@@ -809,6 +809,10 @@ body {
   grid-area: our-experience;
 }
 
+:is(.who-we-are a, .our-experiences__ul a) {
+  transition: all 0.2s ease;
+}
+
 :is(.who-we-are a, .our-experiences__ul a):hover {
   color: var(--clr-neutral-100);
 }
