@@ -6,6 +6,7 @@
 
 .ap__modal .modal {
     --modal-backdrop-bg: rgba(30, 33, 44, 0.75);
+
     background-color: var(--modal--backdrop-bg);
 }
 
@@ -26,8 +27,8 @@
 }
 
 .ap__modal .btn-close {
-    right: 24px;
-    top: 24px;
+    right: var(--size-24px);
+    top: var(--size-24px);
 }
 
 /* Hero */
@@ -50,20 +51,15 @@
 }
 
 .apply-now-job:hover {
-    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05),
-     0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+        0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+        0px 4px 4px -4px rgba(30, 33, 44, 0.03);
 }
 
 .job-name {
     line-height: var(--size-30px);
 }
-/* .apply-now-job:first-child {
-    flex-grow: 1;
-}
-
-.apply-now-job:last-child {
-
-} */
 
 .job-detail {
     line-height: var(--size-21px);
@@ -97,7 +93,6 @@
 }
 
 .send-cv__buttons > * {
-
     min-width: unset;
     flex-basis: 100%;
 }

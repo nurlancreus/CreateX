@@ -5,6 +5,7 @@
     }
 
     /* Footer */
+
     .footer-grid {
         --size-242px: 15.125rem;
 
@@ -96,7 +97,7 @@
     }
 
     :is(.ceo-quote, .ask-question) {
-        position: static!important;
+        position: static !important;
     }
 
     .general-info {
@@ -208,12 +209,12 @@
 @media (max-width: 48rem) {
 
     .ask-question-section {
-        position: static!important;
+        position: static !important;
     }
 
     .ask-question-section .form__wrapper {
         flex-direction: column;
-        align-items: stretch!important;
+        align-items: stretch !important;
     }
 
     /* Hero */
@@ -251,9 +252,9 @@
     }
 
     .client-logos {
-        justify-content: center!important;
+        justify-content: center !important;
     }
-   
+
 
     /* Available Positions */
 

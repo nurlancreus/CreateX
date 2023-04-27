@@ -37,7 +37,10 @@
     padding: var(--size-40px) var(--size-28px);
     margin-left: var(--size-136px);
 
-    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+        0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+        0px 4px 4px -4px rgba(30, 33, 44, 0.03);
 }
 
 .pg-details-table {
@@ -59,7 +62,7 @@
     bottom: calc(var(--size-60px) * -1);
 }
 
-.goal-carousel .carousel-indicators > * {
+.goal-carousel .carousel-indicators>* {
     margin-inline: 6px;
 }
 
@@ -110,9 +113,9 @@
 }
 
 .our-projects {
-    margin-inline: calc(var(--size-15px) * -1)!important;
+    margin-inline: calc(var(--size-15px) * -1) !important;
 }
 
 .project-card {
-    padding-inline: var(--size-15px)!important;
+    padding-inline: var(--size-15px) !important;
 }

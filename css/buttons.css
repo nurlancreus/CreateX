@@ -17,7 +17,6 @@
     padding: 0 var(--size-32px);
     line-height: var(--size-44px);
     height: var(--size-44px);
-    /* min-width: var(--size-198px); */
 }
 
 .small-btn {
@@ -30,15 +29,15 @@
 .outlined-button {
     --outlined-btn-border-clr: var(--clr-primary);
 
-    border-color: var(--outlined-btn-border-clr)!important;
+    border-color: var(--outlined-btn-border-clr) !important;
 }
 
 .outlined-button:hover {
     --bg-clr: var(--clr-primary);
     --txt-clr: var(--clr-neutral-100);
 
-    background-color: var(--bg-clr)!important;
-    color: var(--txt-clr)!important;
+    background-color: var(--bg-clr) !important;
+    color: var(--txt-clr) !important;
 }
 
 .filled-button {

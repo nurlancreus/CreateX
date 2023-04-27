@@ -17,16 +17,16 @@
 }
 
 /* Contact Us Form */
+
 .cu-form__wrapper {
     display: grid;
-    grid-template-areas: 
-    "name select-interest"
-    "phone select-location"
-    "email radio"
-    "cu-textarea cu-textarea"
-    "check-submit check-submit";
+    grid-template-areas:
+        "name select-interest"
+        "phone select-location"
+        "email radio"
+        "cu-textarea cu-textarea"
+        "check-submit check-submit";
     grid-auto-columns: 1fr;
-
     column-gap: var(--size-30px);
     row-gap: var(--size-24px);
 }
@@ -74,11 +74,12 @@
 .cu-form__wrapper .form-textarea {
     min-height: var(--size-128px);
 }
+
 .check-btn__wrapper {
     margin-top: var(--size-16px);
 }
 
-.check-btn__wrapper > *:first-child {
+.check-btn__wrapper>*:first-child {
     flex-basis: 55%;
 }
 
@@ -86,7 +87,7 @@
     gap: var(--size-24px);
 }
 
-/* Our Offices */ 
+/* Our Offices */
 
 .our-offices-section {
     padding-block: var(--size-80px) var(--size-96px);
@@ -105,10 +106,13 @@
     right: calc(var(--size-240px) * -1);
     height: 1px;
     transform: rotate(90deg);
-    background: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%, rgba(218, 219, 221, 0.5) 12.33%, #DADBDD 51.91%,
-            rgba(218, 219, 221, 0.5) 87.85%, rgba(218, 219, 221, 0) 100%);
- 
+    background: linear-gradient(270.01deg, rgba(218, 219, 221, 0) 0%,
+            rgba(218, 219, 221, 0.5) 12.33%,
+            rgb(218, 219, 221) 51.91%,
+            rgba(218, 219, 221, 0.5) 87.85%,
+            rgba(218, 219, 221, 0) 100%);
 }
+
 .office__title {
     line-height: var(--size-42px);
 }
@@ -136,6 +140,6 @@
     display: none;
 }
 
-.find-us-social__ul > *:hover .find-us__img-hover {
+.find-us-social__ul>*:hover .find-us__img-hover {
     display: inline;
 }
