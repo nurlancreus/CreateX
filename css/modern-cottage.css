@@ -18,7 +18,7 @@
 /* Project Goal */
 
 .project-goal {
-    padding-block: var(--size-100px) var(--size-120px);
+    padding-block: var(--size-100px) var(--size-180px);
 }
 
 .pg__title {
@@ -61,8 +61,12 @@
 
 /* Carousel */
 
-.goal-carousel {
-    margin-block: var(--size-120px);
+.goal-carousel .carousel-indicators {
+    bottom: calc(var(--size-60px) * -1);
+}
+
+.goal-carousel .carousel-indicators > * {
+    margin-inline: 6px;
 }
 
 /* Constructive Decisions */
