@@ -1,3 +1,5 @@
+/* Hero */
+
 .page-hero {
     background-image: url(../img/backgroundservice.png);
 }
@@ -11,11 +13,13 @@
     background-position: right;
 }
 
-.services-page-item:not(:last-child) {
-    margin-bottom: var(--size-120px);
+.services-page-items__container {
+    display: grid;
+    grid-auto-rows: var(--size-420px);
+    gap: var(--size-120px);
 }
 
-.services-page-item:nth-child(even) .sp-item-flex {
+:where(.services-page-item:nth-child(even) .sp-item--flex) {
     flex-direction: row-reverse;
 }
 
@@ -24,15 +28,12 @@
     transform: scale(1.01);
 }
 
-.sp-item-flex {
+.sp-item--flex {
     gap: var(--size-80px);
 }
 
 .sp-item__img {
-    --size-420px: 26.25rem;
-
     height: var(--size-420px);
-    flex-basis: 50%;
 }
 
 .sp-item__content {

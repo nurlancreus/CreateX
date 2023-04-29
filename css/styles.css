@@ -52,7 +52,8 @@
   --fw-700: 700;
 
   /* Sizing */
-
+  
+  --size-420px: 26.25rem;
   --size-252px: 15.75rem;
   --size-240px: 15rem;
   --size-232px: 14.5rem;
@@ -260,6 +261,7 @@ body {
 .custom-carousel .carousel-indicators>* {
   width: var(--size-180px);
   position: relative;
+  text-indent: unset;
 }
 
 .custom-carousel .carousel-indicators>*::before {
@@ -756,6 +758,7 @@ body {
 }
 
 /* Show the checkmark when checked */
+
 .form-checkbox input:checked~.checkmark:after {
   display: block;
 }

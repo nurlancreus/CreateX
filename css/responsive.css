@@ -110,12 +110,24 @@
 
     /* Services */
 
-    .services-page-item:not(:last-child) {
-        margin-bottom: var(--size-40px);
+    .services-page__items {
+        padding-block: var(--size-100px) var(--size-120px);
     }
 
-    .sp-item-flex {
-        gap: var(--size-60px);
+    .services-page-items__container {
+        display: block;
+    }
+
+    .services-page-item:not(:last-child) {
+        margin-bottom: var(--size-60px);
+    }
+
+    .sp-item--flex {
+        gap: var(--size-48px);
+    }
+
+    .sp-item__content {
+        padding-block: var(--size-30px);
     }
 
     :is(.values, .benefits) {
@@ -207,6 +219,9 @@
 
 /* Breakpoint: 768px */
 @media (max-width: 48rem) {
+    .custom-container {
+        width: calc(100% - 1.5rem);
+    }
 
     .ask-question-section {
         position: static !important;
@@ -238,6 +253,19 @@
     }
 
     /* Services */
+
+    .services-page__items {
+        padding-block: var(--size-60px);
+    }
+
+    .sp-item--flex {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .sp-item__content {
+        padding-block: var(--size-24px);
+    }
 
     /* Interior Design */
 
