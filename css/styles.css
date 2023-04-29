@@ -260,6 +260,7 @@ body {
 .custom-carousel .carousel-indicators>* {
   width: var(--size-180px);
   position: relative;
+  text-indent: unset;
 }
 
 .custom-carousel .carousel-indicators>*::before {
