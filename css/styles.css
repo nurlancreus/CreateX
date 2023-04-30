@@ -418,6 +418,8 @@ body {
 }
 
 .services__items {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: var(--size-30px);
 }
 
@@ -622,7 +624,7 @@ body {
     "main-news 3nd-news";
 
   gap: var(--size-30px);
-  grid-row: 255px;
+  /* grid-row: 255px; */
 }
 
 .news:first-child {

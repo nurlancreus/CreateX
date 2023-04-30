@@ -4,6 +4,18 @@
         width: calc(100% - 3rem);
     }
 
+    .news-collection {
+        grid-template-areas:
+        "main-news"
+        "2nd-news"
+        "3nd-news";
+        grid-auto-columns: 1fr;
+    }
+
+    .news {
+        width: unset;
+    }
+
     /* Footer */
 
     .footer-grid {
@@ -50,7 +62,11 @@
     }
 
     .our-services {
-        padding: var(--size-80px);
+        padding-block: var(--size-180px) var(--size-80px);
+    }
+
+    .services__items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .browse-our-projects {
@@ -58,8 +74,8 @@
     }
 
     .explore-all {
-        margin-top: var(--size-30px);
-        gap: var(--size-30px);
+        margin-top: var(--size-60px);
+        gap: var(--size-20px);
     }
 
     /* Footer */
@@ -67,7 +83,6 @@
     .footer-grid {
         --size-242px: 15.125rem;
 
-        display: grid;
         grid-template-areas:
             "logo-links logo-links logo-links"
             "contact-us who-we-are our-experience"
@@ -223,13 +238,28 @@
         width: calc(100% - 1.5rem);
     }
 
+    .recent-news {
+        padding-bottom: var(--size-80px);
+    }
+
+    /* Carousel */
+
+    .hero__buttons {
+        flex-direction: column;
+    }
+
     .ask-question-section {
         position: static !important;
+        padding-inline: var(--size-40px);
     }
 
     .ask-question-section .form__wrapper {
         flex-direction: column;
         align-items: stretch !important;
+    }
+
+    .services__items {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
     /* Hero */
@@ -346,10 +376,73 @@
 
 }
 
-/* Breakpoint: 480px */
-@media (max-width: 30rem) {
+/* Breakpoint: 576px */
+@media (max-width: 36rem) {
+    .explore-all {
+        flex-direction: column;
+    }
+    
+    .what-our-clients-said  {
+        gap: var(--size-90px);
+    }
+
+    .client-logos {
+        margin-bottom: var(--size-60px);
+    }
+
+    .main-form__wrapper {
+        padding: var(--size-30px);
+    }
+
+    /* Footer */
+
+    .main-footer {
+        padding-block: var(--size-60px) var(--size-30px);
+    }
+
+    .footer-grid {
+        column-gap: var(--size-15px);
+    }
+
+    .footer-links {
+        margin: unset;
+    }
+
+    .footer-links__ul {
+        gap: var(--size-8px);
+    }
+
+    .copyright-scroll {
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+
+    .copyright-scroll >:first-child {
+        align-self: flex-start !important;
+    }
+    
     .our-team__members {
         grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    /* About */ 
+
+    .ceo-quote {
+        padding: var(--size-60px) var(--size-30px);
+    }
+
+    .our-values-history {
+        padding-inline: unset;
+    }
+
+    /* How to Build */
+
+    .news-details-contact {
+        flex-direction: column;
+        align-items: unset !important;
+    }
+    .comments-section {
+        padding-block: var(--size-60px) var(--size-80px);
     }
 
 }
