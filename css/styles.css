@@ -462,9 +462,12 @@ body {
   display: inline !important;
 }
 
+.learn-more-about-services {
+  gap: var(--size-40px);
+}
+
 .learn-more-span {
   line-height: var(--size-42px);
-  margin-right: var(--size-40px);
 }
 
 .learn-more-btn {

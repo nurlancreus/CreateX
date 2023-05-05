@@ -61,6 +61,10 @@
         padding-top: var(--size-100px);
     }
 
+    :where(.value, .benefit):not(:last-child)::after {
+        display: none;
+    }
+
     .our-services {
         padding-block: var(--size-180px) var(--size-80px);
     }
@@ -299,6 +303,18 @@
 
     /* Interior Design */
 
+    .pricing__table-container{
+        max-width: -moz-fit-content;
+        max-width: fit-content;
+        margin: 0 auto;
+        overflow-x: auto;
+        white-space: nowrap
+    }
+
+    .pricing__table :is(th, td){
+        padding: 12px !important;
+      }
+
     .our-partners {
         padding-block: var(--size-80px);
     }
@@ -315,6 +331,10 @@
 
 
     /* Available Positions */
+
+    .apply-jobs {
+        padding-block: var(--size-80px) var(--size-120px);
+    }
 
     .apply-now-job {
         padding: var(--size-24px) var(--size-32px);
@@ -378,12 +398,27 @@
 
 /* Breakpoint: 576px */
 @media (max-width: 36rem) {
+
+    .our-services {
+        padding-block: var(--size-60px);
+    }
+
+    .learn-more-about-services {
+        margin-top: var(--size-60px);
+        gap: var(--size-20px);
+      }
+
+    :is(.browse-our-projects, .some-facts-section) {
+        padding-block: var(--size-60px) var(--size-80px);
+    }
+
     .explore-all {
         flex-direction: column;
     }
     
     .what-our-clients-said  {
         gap: var(--size-90px);
+        margin-top: var(--size-60px);
     }
 
     .client-logos {
@@ -445,4 +480,9 @@
         padding-block: var(--size-60px) var(--size-80px);
     }
 
+    /* Modal */
+
+    .send-cv__buttons {
+        flex-direction: column;
+    }
 }
