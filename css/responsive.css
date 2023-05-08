@@ -242,6 +242,10 @@
         width: calc(100% - 1.5rem);
     }
 
+    .custom-carousel .carousel-indicators {
+        margin-top: var(--size-180px);
+      }
+
     .recent-news {
         padding-bottom: var(--size-80px);
     }
@@ -398,6 +402,10 @@
 
 /* Breakpoint: 576px */
 @media (max-width: 36rem) {
+
+    .custom-carousel .carousel-indicators {
+        margin-top: var(--size-120px);
+      }
 
     .our-services {
         padding-block: var(--size-60px);

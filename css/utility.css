@@ -113,17 +113,17 @@
 
 .fs-46 {
     font-size: var(--fs-46px);
-    font-size: clamp(2.5rem, 1.833rem + 1.389vw, 2.875rem);
+    font-size: clamp(2rem, 1.192rem + 2.244vw, 2.875rem);
 }
 
 .fs-64 {
     font-size: var(--fs-64px);
-    font-size: clamp(3.125rem, 1.569rem + 3.241vw, 4rem);
+    font-size: clamp(2.5rem, 1.115rem + 3.846vw, 4rem);
 }
 
 .fs-72 {
     font-size: var(--fs-72px);
-    font-size: clamp(3.625rem, 2.069rem + 3.241vw, 4.5rem);
+    font-size: clamp(3rem, 1.615rem + 3.846vw, 4.5rem);
 }
 
 /* Font Weight */
