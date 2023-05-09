@@ -177,9 +177,9 @@ body {
 /* Carousel */
 
 .custom-carousel .carousel-item {
-  --size-988px: 61.75rem;
+  --size-carousel-h: 61.75rem;
 
-  height: var(--size-988px);
+  height: var(--size-carousel-h);
   overflow: hidden;
 }
 
