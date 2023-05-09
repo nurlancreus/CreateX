@@ -8,23 +8,23 @@
 
   /* Color */
 
-  --clr-primary: #ff5a30;
+  --clr-primary: rgb(255, 90, 48);
   --clr-primary-70: rgba(255, 89, 48, 0.7);
-  --clr-crimson: #fc3300;
+  --clr-crimson: rgb(252, 51, 0);
 
   --clr-neutral-60: rgba(255, 255, 255, 0.6);
-  --clr-neutral-100: #fff;
-  --clr-neutral-900: #000;
+  --clr-neutral-100: rgb(255, 255, 255);
+  --clr-neutral-900: rgb(0, 0, 0);
 
   --clr-gray-100: ;
-  --clr-gray-200: #f4f5f6;
-  --clr-gray-300: #e5e8ed;
-  --clr-gray-400: #d7dadd;
+  --clr-gray-200: rgb(244, 245, 246);
+  --clr-gray-300: rgb(229, 232, 237);
+  --clr-gray-400: rgb(215, 218, 221);
   --clr-gray-500: ;
-  --clr-gray-600: #9a9ca5;
-  --clr-gray-700: #787a80;
-  --clr-gray-800: #424551;
-  --clr-gray-900: #1e212c;
+  --clr-gray-600: rgb(154, 156, 165);
+  --clr-gray-700: rgb(120, 122, 128);
+  --clr-gray-800: rgb(66, 69, 81);
+  --clr-gray-900: rgb(30, 33, 44);
 
   /* Font Family */
 
@@ -177,9 +177,9 @@ body {
 /* Carousel */
 
 .custom-carousel .carousel-item {
-  --size-988px: 61.75rem;
+  --size-carousel-h: 61.75rem;
 
-  height: var(--size-988px);
+  height: var(--size-carousel-h);
   overflow: hidden;
 }
 

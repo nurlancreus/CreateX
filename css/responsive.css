@@ -6,9 +6,9 @@
 
     .news-collection {
         grid-template-areas:
-        "main-news"
-        "2nd-news"
-        "3nd-news";
+            "main-news"
+            "2nd-news"
+            "3nd-news";
         grid-auto-columns: 1fr;
     }
 
@@ -43,8 +43,6 @@
         height: 40vw;
     }
 
-    /* Contact Us */
-
 }
 
 /* Breakpoint: 992px */
@@ -55,6 +53,10 @@
 
     .section__header {
         margin-bottom: var(--size-40px);
+    }
+
+    .carousel-overlayer__content {
+        margin-top: var(--size-160px);
     }
 
     .our-values {
@@ -242,9 +244,13 @@
         width: calc(100% - 1.5rem);
     }
 
+    .custom-carousel .carousel-item {
+        --size-carousel-h: 900px;
+    }
+
     .custom-carousel .carousel-indicators {
         margin-top: var(--size-180px);
-      }
+    }
 
     .recent-news {
         padding-bottom: var(--size-80px);
@@ -307,7 +313,7 @@
 
     /* Interior Design */
 
-    .pricing__table-container{
+    .pricing__table-container {
         max-width: -moz-fit-content;
         max-width: fit-content;
         margin: 0 auto;
@@ -315,9 +321,9 @@
         white-space: nowrap
     }
 
-    .pricing__table :is(th, td){
+    .pricing__table :is(th, td) {
         padding: 12px !important;
-      }
+    }
 
     .our-partners {
         padding-block: var(--size-80px);
@@ -404,8 +410,16 @@
 @media (max-width: 36rem) {
 
     .custom-carousel .carousel-indicators {
+        margin-top: var(--size-80px);
+    }
+
+    .custom-carousel .carousel-item {
+        --size-carousel-h: 850px;
+    }
+
+    .carousel-overlayer__content {
         margin-top: var(--size-120px);
-      }
+    }
 
     .our-services {
         padding-block: var(--size-60px);
@@ -414,7 +428,7 @@
     .learn-more-about-services {
         margin-top: var(--size-60px);
         gap: var(--size-20px);
-      }
+    }
 
     :is(.browse-our-projects, .some-facts-section) {
         padding-block: var(--size-60px) var(--size-80px);
@@ -423,8 +437,8 @@
     .explore-all {
         flex-direction: column;
     }
-    
-    .what-our-clients-said  {
+
+    .what-our-clients-said {
         gap: var(--size-90px);
         margin-top: var(--size-60px);
     }
@@ -460,15 +474,15 @@
         gap: 1.875rem;
     }
 
-    .copyright-scroll >:first-child {
+    .copyright-scroll>:first-child {
         align-self: flex-start !important;
     }
-    
+
     .our-team__members {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
-    /* About */ 
+    /* About */
 
     .ceo-quote {
         padding: var(--size-60px) var(--size-30px);
@@ -484,6 +498,7 @@
         flex-direction: column;
         align-items: unset !important;
     }
+
     .comments-section {
         padding-block: var(--size-60px) var(--size-80px);
     }
