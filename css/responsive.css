@@ -30,6 +30,12 @@
         grid-auto-columns: 1fr 1fr 1fr;
     }
 
+    /* About Us */
+
+    .about-ceo::after { 
+    display: none;
+}
+
     /* Work */
 
     .title-img__wrapper {
@@ -104,6 +110,8 @@
     .footer-links {
         margin-left: auto;
     }
+
+    /* Hero */
 
     /* About Us */
 
@@ -490,6 +498,12 @@
 
     .our-values-history {
         padding-inline: unset;
+    }
+
+    /* Services */
+
+    .services-page-item:last-child::before {
+        display: none;
     }
 
     /* How to Build */
