@@ -52,7 +52,7 @@
   --fw-700: 700;
 
   /* Sizing */
-  
+
   --size-420px: 26.25rem;
   --size-252px: 15.75rem;
   --size-240px: 15rem;
@@ -373,21 +373,20 @@ body {
   gap: var(--size-24px);
 }
 
-:where(.form__wrapper .form-label,
+:is(.form__wrapper .form-label,
   .form__wrapper .form-control::placeholder,
   .our-client-company) {
   line-height: var(--size-21px);
 }
 
-:is(.form__wrapper .form-control,
-  .leave-comment-form__wrapper .form-control:not(.form-textarea),
-  .cu-form__wrapper .form-control:not(.form-textarea),
-  .main-form__wrapper .form-control:not(.form-textarea),
-  .modal-form__wrapper .form-control) {
+:is(.form__wrapper, .leave-comment-form__wrapper, .cu-form__wrapper, .main-form__wrapper, .modal-form__wrapper) .form-control:not(.form-textarea) {
   padding: var(--size-12px) var(--size-16px);
+  height: var(--size-44px);
+}
+
+:is(.form__wrapper, .leave-comment-form__wrapper, .cu-form__wrapper, .main-form__wrapper, .modal-form__wrapper) .form-control {
   background: linear-gradient(0deg, #f4f5f7, #f4f5f7),
     linear-gradient(0deg, #d7dadd, #d7dadd);
-  height: var(--size-44px);
 }
 
 .noresize {
@@ -395,10 +394,7 @@ body {
   overflow: hidden;
 }
 
-:is(.form__wrapper .form-control,
-  .main-form__wrapper .form-control,
-  .leave-comment-form__wrapper .form-control,
-  .modal-form__wrapper .form-control)::placeholder,
+:is(.form__wrapper, .main-form__wrapper, .leave-comment-form__wrapper, .modal-form__wrapper) .form-control::placeholder,
 .form-textarea {
   font-size: var(--fs-14px);
   color: var(--clr-gray-600);
