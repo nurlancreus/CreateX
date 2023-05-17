@@ -113,6 +113,10 @@
 
     /* Hero */
 
+    .hero-container {
+        padding-block: 0;
+    }
+
     /* About Us */
 
     .our-team__members {
@@ -410,6 +414,24 @@
         gap: var(--size-20px);
         margin-block: 0;
         align-items: flex-start !important;
+    }
+
+    /* Buttons */
+
+    .large-btn {
+        padding: 0 var(--size-28px);
+        min-width: var(--size-160px);
+    }
+    
+    .regular-btn {
+        padding: 0 var(--size-16px);
+        line-height: var(--size-44px);
+        height: var(--size-44px);
+    }
+    
+    .small-btn {
+        padding: 0 var(--size-10px);
+        min-width: var(--size-100px);
     }
 
 }

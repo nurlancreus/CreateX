@@ -4,7 +4,7 @@
     padding-block: var(--size-172px) var(--size-180px);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100% 100%;
+    background-position: center;
 }
 
 .hero-container {

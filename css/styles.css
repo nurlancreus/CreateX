@@ -438,7 +438,7 @@ body {
   right: 0;
   bottom: 0;
   padding: var(--size-90px) var(--size-40px);
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .service-item:hover .service-item__content {
