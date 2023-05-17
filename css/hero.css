@@ -1,16 +1,15 @@
 .page-hero {
-    --size-172px: 10.75rem;
+    --size-132px: 8.25rem;
 
-    padding-block: var(--size-172px) var(--size-180px);
+    padding-block: var(--size-132px) var(--size-180px);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100% 100%;
+    background-position: center;
 }
 
 .hero-container {
     background-color: rgba(255, 194, 194, 0);
     transition: background-color 0.2s ease;
-    padding: 5rem;
 }
 
 .page-header {

@@ -36,7 +36,7 @@
 .about-ceo::after { 
     content: url(../img/ceobg.png);
     position: absolute;
-    left: 70%;
+    left: 30%;
     z-index: -1;
     isolation: isolate;
 }
