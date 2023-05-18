@@ -18,15 +18,17 @@
     column-gap: var(--size-30px);
     row-gap: var(--size-60px);
     padding-block: var(--size-60px);
+    transition: all 0.3s ease;
 }
 
 .news-tab .nav-link:hover {
     color: var(--clr-primary) !important;
 }
 
-.news-tab .active {
+.news-tab .nav-link.active {
     background-color: var(--clr-neutral-100) !important;
     color: var(--clr-primary) !important;
+    border: 1px solid var(--clr-primary) !important;
 }
 
 /* News items */
