@@ -171,7 +171,14 @@
 
     .offerings {
         padding-block: var(--size-80px) var(--size-100px);
+        gap: var(--size-60px);
     }
+
+    /* Accordion */
+
+    .our-offers .accordion {
+        width: unset;
+      }
 
     .related-projects {
         padding-block: var(--size-140px) var(--size-100px);

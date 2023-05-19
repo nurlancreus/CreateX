@@ -113,32 +113,43 @@
                         <h3 class="offerings__title text--gray-900 fs-46 fw-700">We offer</h3>
                         <div class="our-offers">
                             <div class="accordion" id="interior-design-accordion">
-                                <div class="accordion-item">
+                                <div class="accordion-item border-0 mb-4">
+                                    <div class="accordion-icon d-flex align-items-center justify-content-center pt-2">
+                                        <img src="../img/AccMinus.svg" alt="accordion minus" class="accordion-minus">
+                                        <img src="../img/AccPlus.svg" alt="accordion plus"
+                                            class="accordion-plus d-none">
+                                    </div>
                                     <h4 class="accordion-header">
-                                        <button class="accordion-button text--gray-900 fs-28 fw-700" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#panel-apartments"
+                                        <button class="accordion-button bg-transparent text--gray-900 fs-28 fw-700 p-0"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#panel-apartments"
                                             aria-expanded="true" aria-controls="panel-apartments">
                                             Interior design of apartments
                                         </button>
                                     </h4>
                                     <div id="panel-apartments" class="accordion-collapse collapse show">
-                                        <div class="accordion-body text--gray-700">
+                                        <div class="accordion-body text--gray-700 p-0">
                                             Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum
                                             faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi
                                             semper massa ac facilisis.
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
+                                <div class="accordion-item border-0">
+                                    <div class="accordion-icon d-flex align-items-center justify-content-center pt-2">
+                                        <img src="../img/AccMinus.svg" alt="accordion minus" class="accordion-minus d-none">
+                                        <img src="../img/AccPlus.svg" alt="accordion plus"
+                                            class="accordion-plus d-inline">
+                                    </div>
                                     <h4 class="accordion-header">
-                                        <button class="accordion-button collapsed text--gray-900 fs-28 fw-700"
+                                        <button
+                                            class="accordion-button collapsed bg-transparent text--gray-900 fs-28 fw-700 p-0"
                                             type="button" data-bs-toggle="collapse" data-bs-target="#panel-houses"
                                             aria-expanded="false" aria-controls="panel-houses">
                                             Interior design of private houses
                                         </button>
                                     </h4>
                                     <div id="panel-houses" class="accordion-collapse collapse">
-                                        <div class="accordion-body text--gray-700">
+                                        <div class="accordion-body text--gray-700 p-0">
                                             Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum
                                             faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi
                                             semper massa ac facilisis.
@@ -243,7 +254,8 @@
                     </div>
                 </header>
                 <div class="our-projects text-center row mx-0">
-                    <div class="project-card rounded-2 overflow-hidden position-relative transition-200 px-0 col-12 col-lg">
+                    <div
+                        class="project-card rounded-2 overflow-hidden position-relative transition-200 px-0 col-12 col-lg">
                         <a href="" class="text-decoration-none">
                             <div class="project-img overflow-hidden">
                                 <img src="../img/image1.png" class="w-100 h-100 object-fit-cover" alt="">
@@ -259,7 +271,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="project-card rounded-2 overflow-hidden position-relative transition-200 px-0 col-12 col-lg">
+                    <div
+                        class="project-card rounded-2 overflow-hidden position-relative transition-200 px-0 col-12 col-lg">
                         <a href="" class="text-decoration-none">
                             <div class="project-img overflow-hidden">
                                 <img src="../img/photo-1631049307264-da0ec9d70304.avif"
@@ -275,7 +288,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="project-card rounded-2 overflow-hidden position-relative transition-200 px-0 col-12 col-lg">
+                    <div
+                        class="project-card rounded-2 overflow-hidden position-relative transition-200 px-0 col-12 col-lg">
                         <a href="" class="text-decoration-none">
                             <div class="project-img overflow-hidden">
                                 <img src="../img/image3.png" class="w-100 h-100 object-fit-cover" alt="">
@@ -560,6 +574,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script>
+        // Accordion Icon switch
+
+        let accordionBtns = document.querySelectorAll(".our-offers .accordion-button");
+        let accordionMinus = document.querySelectorAll(".our-offers .accordion-minus");
+        let accordionPlus = document.querySelectorAll(".our-offers .accordion-plus");
+
+        for (let i = 0; i < accordionBtns.length; i++) {
+            accordionBtns[i].addEventListener("click", () => {
+                accordionMinus[i].classList.toggle("d-none")
+                accordionPlus[i].classList.toggle("d-none")
+            })
+        }
+
+        // accordionBtns.forEach((btn) => {
+        //     btn.addEventListener("click", () => {
+        //         accordionMinus.forEach((icon) => {icon.classList.toggle("d-none")});
+        //         accordionPlus.forEach((icon) => {icon.classList.toggle("d-none")});
+        //     })
+        // })
+
+        console.log(accordionMinus)
+        console.log(accordionPlus)
+        console.log(accordionBtns)
+    </script>
 </body>
 
 </html>
