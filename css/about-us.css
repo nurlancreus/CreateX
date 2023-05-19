@@ -80,7 +80,7 @@
 /* Our Core Values */
 
 .our-values-history {
-    padding: var(--size-80px) var(--size-80px);
+    padding: var(--size-80px);
 }
 
 :is(.values, .client-logos) {

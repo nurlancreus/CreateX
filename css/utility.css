@@ -143,7 +143,3 @@
 .fw-700 {
     font-weight: var(--fw-700);
 }
-
-.text-uppercase {
-    text-transform: uppercase;
-}
