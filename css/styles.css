@@ -8,9 +8,9 @@
 
   /* Color */
 
-  --clr-primary: rgb(255, 90, 48);
-  --clr-primary-70: rgba(255, 89, 48, 0.7);
-  --clr-crimson: rgb(252, 51, 0);
+  --clr-primary: #0d6dfd;
+  --clr-primary-70: rgba(13, 109, 253, 0.7);
+  --clr-crimson: #0051c9;
 
   --clr-neutral-60: rgba(255, 255, 255, 0.6);
   --clr-neutral-100: rgb(255, 255, 255);

@@ -55,7 +55,7 @@
                                 <a class="nav-link text--gray-800 fw-700 p-0" href="../work-page/our-work.html">Work</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text--gray-800 fw-700 p-0" href="news-page/news.html">News</a>
+                                <a class="nav-link text--gray-800 fw-700 p-0" href="../news-page/news.html">News</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text--gray-800 fw-700 p-0"
@@ -136,7 +136,8 @@
                                 </div>
                                 <div class="accordion-item border-0">
                                     <div class="accordion-icon d-flex align-items-center justify-content-center pt-2">
-                                        <img src="../img/AccMinus.svg" alt="accordion minus" class="accordion-minus d-none">
+                                        <img src="../img/AccMinus.svg" alt="accordion minus"
+                                            class="accordion-minus d-none">
                                         <img src="../img/AccPlus.svg" alt="accordion plus"
                                             class="accordion-plus d-inline">
                                     </div>
@@ -583,21 +584,10 @@
 
         for (let i = 0; i < accordionBtns.length; i++) {
             accordionBtns[i].addEventListener("click", () => {
-                accordionMinus[i].classList.toggle("d-none")
-                accordionPlus[i].classList.toggle("d-none")
+                accordionMinus[i].classList.toggle("d-none");
+                accordionPlus[i].classList.toggle("d-none");
             })
         }
-
-        // accordionBtns.forEach((btn) => {
-        //     btn.addEventListener("click", () => {
-        //         accordionMinus.forEach((icon) => {icon.classList.toggle("d-none")});
-        //         accordionPlus.forEach((icon) => {icon.classList.toggle("d-none")});
-        //     })
-        // })
-
-        console.log(accordionMinus)
-        console.log(accordionPlus)
-        console.log(accordionBtns)
     </script>
 </body>
 

@@ -32,10 +32,16 @@
   line-height: var(--size-42px);
 }
 
+.our-offers .accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: var(--bs-accordion-active-bg);
+  box-shadow: none;
+}
+
 .our-offers .accordion-button:focus {
   height: 5.25rem;
   line-height: var(--size-42px);
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: none;
 }
 
 .our-offers .accordion-button::after {
@@ -95,13 +101,13 @@
 
 .way:hover::before {
   animation: shadow-pulse 1s infinite;
-  background-color: rgba(255, 89, 48, 0.12);
+  background-color: rgba(13, 109, 253, 0.12);
   color: var(--clr-primary);
 }
 
 @keyframes shadow-pulse {
   0% {
-    box-shadow: 0 0 0px 0px rgba(255, 89, 48, 0.12);
+    box-shadow: 0 0 0px 0px rgba(13, 109, 253, 0.12);
   }
 
   100% {
@@ -124,8 +130,11 @@
 }
 
 .discuss-project {
+  --size-btn-w: 24.375rem;
+
   padding-inline: var(--size-112px);
   bottom: 0;
+  width: var(--size-btn-w);
   transform: translateY(50%);
   left: 0;
   right: 0;

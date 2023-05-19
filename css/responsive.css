@@ -1,586 +1,681 @@
 /* Breakpoint: 1200px */
 @media (max-width: 75rem) {
-    .custom-container {
-        width: calc(100% - 3rem);
-    }
+  .custom-container {
+    width: calc(100% - 3rem);
+  }
 
-    .news-collection {
-        grid-template-areas:
-            "main-news"
-            "2nd-news"
-            "3nd-news";
-        grid-auto-columns: 1fr;
-    }
+  .news-collection {
+    grid-template-areas:
+      "main-news"
+      "2nd-news"
+      "3nd-news";
+    grid-auto-columns: 1fr;
+  }
 
-    .news {
-        width: unset;
-    }
+  .news {
+    width: unset;
+  }
 
-    /* Footer */
+  /* Footer */
 
-    .footer-grid {
-        --size-242px: 15.125rem;
+  .footer-grid {
+    --size-242px: 15.125rem;
 
-        display: grid;
-        grid-template-areas:
-            "logo-links footer-form footer-form"
-            "contact-us who-we-are our-experience";
-        row-gap: var(--size-48px);
-        column-gap: var(--size-30px);
-        grid-auto-columns: 1fr 1fr 1fr;
-    }
+    display: grid;
+    grid-template-areas:
+      "logo-links footer-form footer-form"
+      "contact-us who-we-are our-experience";
+    row-gap: var(--size-48px);
+    column-gap: var(--size-30px);
+    grid-auto-columns: 1fr 1fr 1fr;
+  }
 
-    /* About Us */
+  /* About Us */
 
-    .about-ceo::after { 
+  .about-ceo::after {
     display: none;
-}
+  }
 
-    /* Work */
+  /* Available Positions */
 
-    .title-img__wrapper {
-        height: 50vw;
-        width: 70vw;
-    }
+  .apply-now {
+    gap: var(--size-80px);
+  }
 
-    /* News */
+  /* Work */
 
-    .news-content__banner-img {
-        height: 40vw;
-    }
+  .title-img__wrapper {
+    height: 50vw;
+    width: 70vw;
+  }
 
+  /* News */
+
+  .news-content__banner-img {
+    height: 40vw;
+  }
 }
 
 /* Breakpoint: 992px */
 @media (max-width: 62rem) {
-    .header__contact {
-        display: none;
-    }
+  .header__contact {
+    display: none;
+  }
 
-    .section__header {
-        margin-bottom: var(--size-40px);
-    }
+  .section__header {
+    margin-bottom: var(--size-40px);
+  }
 
-    .carousel-overlayer__content {
-        margin-top: var(--size-160px);
-    }
+  .carousel-overlayer__content {
+    margin-top: var(--size-160px);
+  }
 
-    .our-values {
-        padding-top: var(--size-100px);
-    }
+  .our-values {
+    padding-top: var(--size-80px);
+  }
 
-    :where(.value, .benefit):not(:last-child)::after {
-        display: none;
-    }
+  :where(.value, .benefit):not(:last-child)::after {
+    display: none;
+  }
 
-    .our-services {
-        padding-block: var(--size-180px) var(--size-80px);
-    }
+  .our-services {
+    padding-block: var(--size-180px) var(--size-80px);
+  }
 
-    .services__items {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .services__items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    .browse-our-projects {
-        padding-block: var(--size-80px);
-    }
+  .browse-our-projects {
+    padding-block: var(--size-80px);
+  }
 
-    .explore-all {
-        margin-top: var(--size-60px);
-        gap: var(--size-20px);
-    }
+  .explore-all {
+    margin-top: var(--size-60px);
+    gap: var(--size-20px);
+  }
 
-    /* Footer */
+  /* Footer */
 
-    .footer-grid {
-        --size-242px: 15.125rem;
+  .footer-grid {
+    --size-242px: 15.125rem;
 
-        grid-template-areas:
-            "logo-links logo-links logo-links"
-            "contact-us who-we-are our-experience"
-            "footer-form footer-form footer-form";
-        row-gap: var(--size-40px);
-        grid-auto-columns: 1fr 1fr 1fr;
-    }
+    grid-template-areas:
+      "logo-links logo-links logo-links"
+      "contact-us who-we-are our-experience"
+      "footer-form footer-form footer-form";
+    row-gap: var(--size-40px);
+    grid-auto-columns: 1fr 1fr 1fr;
+  }
 
-    .footer-about-us {
-        max-width: unset;
-    }
+  .footer-about-us {
+    max-width: unset;
+  }
 
-    .footer-links {
-        margin-left: auto;
-    }
+  .footer-links {
+    margin-left: auto;
+  }
 
-    /* Hero */
+  /* Hero */
 
-    .hero-container {
-        padding-block: 0;
-    }
+  .hero-container {
+    padding-block: 0;
+  }
 
-    /* About Us */
+  /* About Us */
 
-    .our-team__members {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        column-gap: var(--size-30px);
-        row-gap: var(--size-30px);
-    }
+  .our-team__members {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--size-30px);
+    row-gap: var(--size-30px);
+  }
 
-    .about-ceo {
-        margin-top: var(--size-120px);
-    }
+  .about-ceo {
+    margin-top: var(--size-120px);
+  }
 
-    :is(.ceo-quote, .ask-question) {
-        position: static !important;
-    }
+  :is(.ceo-quote, .ask-question) {
+    position: static !important;
+  }
 
-    .general-info {
-        padding-block: var(--size-60px);
-    }
+  .general-info {
+    padding-block: var(--size-60px);
+  }
 
-    .values {
-        margin-bottom: var(--size-100px);
-    }
+  .values {
+    margin-bottom: var(--size-100px);
+  }
 
-    /* Services */
+  /* Services */
 
-    .services-page__items {
-        padding-block: var(--size-100px) var(--size-120px);
-    }
+  .services-page__items {
+    padding-block: var(--size-100px) var(--size-120px);
+  }
 
-    .services-page-items__container {
-        display: block;
-    }
+  .services-page-items__container {
+    display: block;
+  }
 
-    .services-page-item:not(:last-child) {
-        margin-bottom: var(--size-60px);
-    }
+  .services-page-item:not(:last-child) {
+    margin-bottom: var(--size-60px);
+  }
 
-    .sp-item--flex {
-        gap: var(--size-48px);
-    }
+  .sp-item--flex {
+    gap: var(--size-48px);
+  }
 
-    .sp-item__content {
-        padding-block: var(--size-30px);
-    }
+  .sp-item__content {
+    padding-block: var(--size-30px);
+  }
 
-    :is(.values, .benefits) {
-        gap: var(--size-80px);
-    }
+  :is(.values, .benefits) {
+    gap: var(--size-80px);
+  }
 
-    /* Interior Design */
+  /* Interior Design */
 
-    .offerings {
-        padding-block: var(--size-80px) var(--size-100px);
-        gap: var(--size-60px);
-    }
+  .offerings {
+    padding-block: var(--size-80px) var(--size-100px);
+    gap: var(--size-60px);
+  }
 
-    /* Accordion */
+  /* Accordion */
 
-    .our-offers .accordion {
-        width: unset;
-      }
+  .our-offers .accordion {
+    width: unset;
+  }
 
-    .related-projects {
-        padding-block: var(--size-140px) var(--size-100px);
-    }
+  .related-projects {
+    padding-block: var(--size-140px) var(--size-100px);
+  }
 
-    /* Our Work */
+  /* Our Work */
 
-    .ow-hero {
-        background-size: cover;
-    }
+  .ow-hero {
+    background-size: cover;
+  }
 
-    .our-works__container .services__items {
-        overflow: scroll;
-    }
+  .our-works__container .services__items {
+    overflow: scroll;
+  }
 
-    /* Modern Cottage */
+  /* Modern Cottage */
 
-    .project-goal {
-        padding-block: var(--size-60px) var(--size-140px);
-    }
+  .project-goal {
+    padding-block: var(--size-60px) var(--size-140px);
+  }
 
-    .decisions {
-        flex-direction: column-reverse;
-        gap: var(--size-40px);
-        align-items: flex-start;
-    }
+  .decisions {
+    flex-direction: column-reverse;
+    gap: var(--size-40px);
+    align-items: flex-start;
+  }
 
-    .cd-img {
-        height: 60vw;
-    }
+  .cd-img {
+    height: 60vw;
+  }
 
-    .details {
-        padding: var(--size-24px);
-        margin-left: 0;
-    }
+  .details {
+    padding: var(--size-24px);
+    margin-left: 0;
+  }
 
-    /* Available Position */
+  /* Available Position */
 
-    .apply-now {
-        gap: var(--size-60px);
-    }
+  .apply-jobs {
+    padding-block: var(--size-100px) var(--size-140px);
+  }
 
-    .apply-now-job {
-        align-items: stretch !important;
-    }
+  .apply-now-job {
+    align-items: stretch !important;
+  }
 
-    /* News */
+  .employee-benefits {
+    padding-bottom: var(--size-140px);
+  }
 
-    .news-categories {
-        padding-block: var(--size-60px) var(--size-80px);
-    }
+  /* News */
 
-    .name-mail {
-        flex-direction: column;
-    }
+  .news-categories {
+    padding-block: var(--size-60px) var(--size-80px);
+  }
 
-    /* Contact Us */
+  .name-mail {
+    flex-direction: column;
+  }
 
-    .cu-form__img {
-        height: 40vw;
-        margin-bottom: var(--size-40px);
-    }
+  /* Contact Us */
 
-    .our-offices-section {
-        padding-block: var(--size-40px) var(--size-60px);
-    }
+  .cu-form__img {
+    height: 40vw;
+    margin-bottom: var(--size-40px);
+  }
 
-    .our-offices {
-        gap: var(--size-80px);
-        margin-bottom: var(--size-60px);
-    }
+  .our-offices-section {
+    padding-block: var(--size-40px) var(--size-60px);
+  }
 
-    .office:not(:last-child)::after {
-        display: none;
-    }
+  .our-offices {
+    gap: var(--size-80px);
+    margin-bottom: var(--size-60px);
+  }
 
+  .office:not(:last-child)::after {
+    display: none;
+  }
 }
 
 /* Breakpoint: 768px */
 @media (max-width: 48rem) {
-    /* .custom-container {
-        width: calc(100% - 1.5rem);
-    } */
+  .custom-carousel .carousel-item {
+    --size-carousel-h: 900px;
+  }
 
-    .custom-carousel .carousel-item {
-        --size-carousel-h: 900px;
-    }
+  .custom-carousel .carousel-indicators {
+    margin-top: var(--size-180px);
+  }
 
-    .custom-carousel .carousel-indicators {
-        margin-top: var(--size-180px);
-    }
+  .recent-news {
+    padding-bottom: var(--size-80px);
+  }
 
-    .recent-news {
-        padding-bottom: var(--size-80px);
-    }
+  /* Carousel */
 
-    /* Carousel */
+  .carousel-overlayer__content {
+    margin-top: var(--size-100px);
+  }
 
-    .carousel-overlayer__content {
-        margin-top: var(--size-100px);
-    }
+  .hero__buttons {
+    flex-direction: column;
+  }
 
-    .hero__buttons {
-        flex-direction: column;
-    }
+  .ask-question-section {
+    position: static !important;
+    padding-inline: var(--size-40px);
+  }
 
-    .ask-question-section {
-        position: static !important;
-        padding-inline: var(--size-40px);
-    }
+  .ask-question-section .form__wrapper {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
 
-    .ask-question-section .form__wrapper {
-        flex-direction: column;
-        align-items: stretch !important;
-    }
+  .services__items {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 
-    .services__items {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
+  .we-are-createx {
+    margin-top: var(--size-80px);
+  }
 
-    /* Hero */
+  /* Hero */
 
-    .page-header {
-        margin-top: var(--size-30px);
-    }
+  .page-header {
+    margin-top: var(--size-30px);
+  }
 
-    .page-hero {
-        padding-block: var(--size-120px) var(--size-100px);
-    }
+  .page-hero {
+    padding-block: var(--size-120px) var(--size-100px);
+  }
 
-    .hero__title {
-        line-height: var(--size-64px);
-    }
+  .hero__title {
+    line-height: var(--size-64px);
+  }
 
-    /* Abous US */
+  /* Abous US */
 
-    .client-logos {
-        margin-bottom: var(--size-120px);
-    }
+  .client-logos {
+    margin-bottom: var(--size-120px);
+  }
 
-    .our-team__members {
-        column-gap: var(--size-20px);
-    }
+  .our-team__members {
+    column-gap: var(--size-20px);
+  }
 
-    /* Services */
+  /* Services */
 
-    .services-page__items {
-        padding-block: var(--size-60px);
-    }
+  .services-page__items {
+    padding-block: var(--size-60px);
+  }
 
-    .sp-item--flex {
-        flex-direction: column;
-        gap: 0;
-    }
+  .sp-item--flex {
+    flex-direction: column;
+    gap: 0;
+  }
 
-    .sp-item__content {
-        padding-block: var(--size-24px);
-    }
+  .sp-item__content {
+    padding-block: var(--size-24px);
+  }
 
-    /* Interior Design */
+  /* Interior Design */
 
-    .pricing__table-container {
-        max-width: -moz-fit-content;
-        max-width: fit-content;
-        margin: 0 auto;
-        overflow-x: auto;
-        white-space: nowrap
-    }
+  .discuss-project {
+    --size-btn-w: 17.5rem;
+  }
 
-    .pricing__table :is(th, td) {
-        padding: 12px !important;
-    }
+  .pricing__table-container {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    margin: 0 auto;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 
-    .our-partners {
-        padding-block: var(--size-80px);
-    }
+  .pricing__table :is(th, td) {
+    padding: 12px !important;
+  }
 
-    /* Our Work */
+  .our-partners {
+    padding-block: var(--size-80px);
+  }
 
-    .ow-clients {
-        padding-block: var(--size-160px) var(--size-40px);
-    }
+  /* Our Work */
 
-    .client-logos {
-        justify-content: center !important;
-    }
+  .ow-clients {
+    padding-block: var(--size-140px) var(--size-40px);
+  }
 
+  .ow-clients__title {
+    margin-bottom: var(--size-30px);
+  }
 
-    /* Available Positions */
+  .ow-clients .client-logos {
+    margin-bottom: var(--size-60px);
+  }
 
-    .apply-jobs {
-        padding-block: var(--size-80px) var(--size-120px);
-    }
+  .client-logos {
+    justify-content: center !important;
+  }
 
-    .apply-now-job {
-        padding: var(--size-24px) var(--size-32px);
-        flex-direction: column;
-        gap: var(--size-20px);
-    }
+  /* Available Positions */
 
-    /* News */
+  .apply-jobs {
+    padding-block: var(--size-80px) var(--size-120px);
+  }
 
-    .news__items {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        column-gap: var(--size-20px);
-        row-gap: var(--size-30px);
-        padding-block: var(--size-40px);
-    }
+  .apply-now {
+    gap: var(--size-60px);
+  }
 
-    :is(.news-content, .our-works__container) {
-        padding-bottom: var(--size-60px);
-    }
+  .apply-now-job {
+    padding: var(--size-24px) var(--size-32px);
+    flex-direction: column;
+    gap: var(--size-20px);
+  }
 
-    .related-news {
-        padding-block: var(--size-60px);
-    }
+  .employee-benefits {
+    padding-bottom: var(--size-100px);
+  }
 
-    :is(.comments-section .services-page__items) {
-        padding-block: var(--size-60px) var(--size-80px);
-    }
+  /* News */
 
-    /* Contact Us */
+  .news__items {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    column-gap: var(--size-20px);
+    row-gap: var(--size-30px);
+    padding-block: var(--size-40px);
+  }
 
-    .contact-us {
-        padding-block: var(--size-80px);
-    }
+  :is(.news-content, .our-works__container) {
+    padding-bottom: var(--size-60px);
+  }
 
-    .cu-form__wrapper {
-        display: grid;
-        grid-template-areas:
-            "name"
-            "select-interest"
-            "phone"
-            "select-location"
-            "email"
-            "radio"
-            "cu-textarea"
-            "check-submit";
-        grid-auto-columns: 1fr;
+  .related-news {
+    padding-block: var(--size-60px);
+  }
 
-        column-gap: var(--size-30px);
-        row-gap: var(--size-24px);
-    }
+  :is(.comments-section .services-page__items) {
+    padding-block: var(--size-60px) var(--size-80px);
+  }
 
-    .check-btn__wrapper {
-        flex-direction: column;
-        gap: var(--size-20px);
-        margin-block: 0;
-        align-items: flex-start !important;
-    }
+  /* Contact Us */
 
-    /* Buttons */
+  .contact-us {
+    padding-block: var(--size-80px);
+  }
 
-    .large-btn {
-        padding: 0 var(--size-28px);
-        min-width: var(--size-160px);
-    }
-    
-    .regular-btn {
-        padding: 0 var(--size-16px);
-        line-height: var(--size-44px);
-        height: var(--size-44px);
-    }
-    
-    .small-btn {
-        padding: 0 var(--size-10px);
-        min-width: var(--size-100px);
-    }
+  .cu-form__wrapper {
+    display: grid;
+    grid-template-areas:
+      "name"
+      "select-interest"
+      "phone"
+      "select-location"
+      "email"
+      "radio"
+      "cu-textarea"
+      "check-submit";
+    grid-auto-columns: 1fr;
 
+    column-gap: var(--size-30px);
+    row-gap: var(--size-24px);
+  }
+
+  .check-btn__wrapper {
+    flex-direction: column;
+    gap: var(--size-20px);
+    margin-block: 0;
+    align-items: flex-start !important;
+  }
+
+  /* Buttons */
+
+  .large-btn {
+    padding: 0 var(--size-28px);
+    min-width: var(--size-160px);
+  }
+
+  .regular-btn {
+    padding: 0 var(--size-16px);
+    line-height: var(--size-44px);
+    height: var(--size-44px);
+  }
+
+  .small-btn {
+    padding: 0 var(--size-10px);
+    min-width: var(--size-100px);
+  }
 }
 
 /* Breakpoint: 576px */
 @media (max-width: 36rem) {
+  .custom-carousel .carousel-indicators {
+    margin-top: var(--size-80px);
+  }
 
-    .custom-carousel .carousel-indicators {
-        margin-top: var(--size-80px);
-    }
+  .custom-carousel .carousel-item {
+    --size-carousel-h: 800px;
+  }
 
-    .custom-carousel .carousel-item {
-        --size-carousel-h: 800px;
-    }
+  .carousel-overlayer__content {
+    margin-top: var(--size-60px);
+  }
 
-    .carousel-overlayer__content {
-        margin-top: var(--size-60px);
-    }
+  .we-are-createx {
+    margin-top: var(--size-60px);
+  }
 
-    .our-services {
-        padding-block: var(--size-60px);
-    }
+  .our-services {
+    padding-block: var(--size-60px);
+  }
 
-    .learn-more-about-services {
-        margin-top: var(--size-60px);
-        gap: var(--size-20px);
-    }
+  .learn-more-about-services {
+    margin-top: var(--size-60px);
+    gap: var(--size-20px);
+  }
 
-    :is(.browse-our-projects, .some-facts-section) {
-        padding-block: var(--size-60px) var(--size-80px);
-    }
+  :is(.browse-our-projects, .some-facts-section) {
+    padding-block: var(--size-60px) var(--size-80px);
+  }
 
-    .explore-all {
-        flex-direction: column;
-    }
+  .explore-all {
+    flex-direction: column;
+    margin-top: var(--size-40px);
+  }
 
-    .what-our-clients-said {
-        gap: var(--size-90px);
-        margin-top: var(--size-60px);
-    }
+  .recent-news {
+    padding-bottom: var(--size-60px);
+}
 
-    .client-logos {
-        margin-bottom: var(--size-60px);
-    }
+  .what-our-clients-said {
+    gap: var(--size-90px);
+    margin-top: var(--size-60px);
+  }
 
-    .main-form__wrapper {
-        padding: var(--size-30px);
-    }
+  .client-logos {
+    margin-bottom: var(--size-40px);
+  }
 
-    /* Footer */
+  .main-form__wrapper {
+    padding: var(--size-30px);
+  }
 
-    .main-footer {
-        padding-block: var(--size-60px) var(--size-30px);
-    }
+  /* Footer */
 
-    .footer-grid {
-        column-gap: var(--size-15px);
-    }
+  .main-footer {
+    padding-block: var(--size-60px) var(--size-30px);
+  }
 
-    .footer-links {
-        margin: unset;
-    }
+  .footer-grid {
+    column-gap: var(--size-15px);
+  }
 
-    .footer-logo-links {
-        gap: 0;
-    }
+  .footer-links {
+    margin: unset;
+  }
 
-    .footer-links__ul {
-        gap: var(--size-8px);
-    }
+  .footer-logo-links {
+    gap: 0;
+  }
 
-    .copyright-scroll {
-        flex-direction: column;
-        gap: 1.875rem;
-    }
+  .footer-links__ul {
+    gap: var(--size-8px);
+  }
 
-    .copyright-scroll>:first-child {
-        align-self: flex-start !important;
-    }
+  .copyright-scroll {
+    flex-direction: column;
+    gap: 1.875rem;
+  }
 
-    .our-team__members {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
+  .copyright-scroll > :first-child {
+    align-self: flex-start !important;
+  }
 
-    /* Hero */
+  .our-team__members {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 
-    .page-header {
-        margin-top: var(--size-16px);
-    }
+  /* Hero */
 
-    .page-hero {
-        padding-block: var(--size-100px) var(--size-40px);
-    }
+  .page-header {
+    margin-top: var(--size-16px);
+  }
 
-    /* About */
+  .page-hero {
+    padding-block: var(--size-100px) var(--size-40px);
+  }
 
-    .ceo-quote {
-        padding: var(--size-60px) var(--size-30px);
-    }
+  /* About */
 
-    .our-values-history {
-        padding-inline: unset;
-    }
+  .about-ceo {
+    margin-top: var(--size-80px);
+  }
 
-    /* Services */
+  .ceo-quote {
+    padding: var(--size-40px) var(--size-20px);
+  }
 
-    .services-page-item:last-child::before {
-        display: none;
-    }
+  .quote::before {
+    right: calc(100% + var(--size-10px));
+  }
 
-    /* Our Works */
+  .our-values-history {
+    padding-inline: unset;
+    padding-block: var(--size-60px);
+  }
 
-    .our-works {
-        padding-top: var(--size-60px);
-    }
+  /* Available Positions */
 
-    .our-works__container > .services__items {
-        display: none !important;
-    }
+  .apply-jobs {
+    padding-block: var(--size-60px);
+  }
 
-    /* How to Build */
+  .apply-now {
+    gap: var(--size-40px);
+  }
 
-    .news-details-contact {
-        flex-direction: column;
-        align-items: unset !important;
-    }
+  .employee-benefits {
+    padding-bottom: var(--size-60px);
+  }
+  /* Services */
 
-    .comments-section {
-        padding-block: var(--size-60px) var(--size-80px);
-    }
+  .services-page-item:last-child::before {
+    display: none;
+  }
 
-    /* Modal */
+  /* Interior Design */
 
-    .send-cv__buttons {
-        flex-direction: column;
-    }
+  .discuss-project {
+    --size-btn-w: 12.5rem;
+    padding: 0;
+  }
+
+  .related-projects {
+    padding-block: var(--size-100px) var(--size-60px);
+  }
+
+  /* Our Works */
+
+  .our-works {
+    padding-top: var(--size-60px);
+  }
+
+  .our-works__container > .services__items {
+    display: none !important;
+  }
+
+  /* Modern Cottage */
+
+  .similar-projects__container .explore-all {
+    margin-top: var(--size-20px);
+  }
+
+  .similar-projects {
+    padding-block: var(--size-120px) var(--size-60px);
+  }
+
+  /* How to Build */
+
+  .news-details-contact {
+    flex-direction: column;
+    align-items: unset !important;
+  }
+
+  .comments-section {
+    padding-block: var(--size-60px) var(--size-80px);
+  }
+
+  /* Modal */
+
+  .send-cv__buttons {
+    flex-direction: column;
+  }
+
+  /* Buttons */
+
+  .large-btn {
+    padding: 0 var(--size-16px);
+    min-width: var(--size-100px);
+  }
+
+  .regular-btn {
+    padding: 0 var(--size-12px);
+    line-height: var(--size-44px);
+    height: var(--size-44px);
+  }
+
+  .small-btn {
+    padding: 0 var(--size-10px);
+    min-width: var(--size-80px);
+  }
 }
