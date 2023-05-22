@@ -130,14 +130,14 @@ body {
 /* Header */
 
 .header-filler {
-  --size-92px: 5.75rem;
+  --size-filler: 5.75rem;
 
-  height: var(--size-92px);
+  height: var(--size-filler);
 }
 
 .main-header {
-  background-color: transparent !important;
-  margin-block: 1.25rem;
+  /* background-color: transparent !important; */
+  padding-block: 1.25rem;
   z-index: 9999999;
 }
 

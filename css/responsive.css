@@ -58,6 +58,20 @@
 
 /* Breakpoint: 992px */
 @media (max-width: 62rem) {
+  
+  .header-filler {
+    --size-filler: 4.25rem;
+  }
+  
+  .main-header {
+    padding-block: 0.5rem;
+  }
+  
+  .main-header .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
   .header__contact {
     display: none;
   }
@@ -69,6 +83,10 @@
   .carousel-overlayer__content {
     margin-top: var(--size-160px);
   }
+
+  .custom-carousel .carousel-control {
+    display: none;
+}
 
   .our-values {
     padding-top: var(--size-80px);
@@ -533,11 +551,16 @@
   /* Footer */
 
   .main-footer {
-    padding-block: var(--size-60px) var(--size-30px);
+    padding-block: var(--size-40px) var(--size-30px);
   }
 
   .footer-grid {
-    column-gap: var(--size-15px);
+    grid-template-areas:
+      "logo-links logo-links logo-links"
+      "contact-us contact-us contact-us"
+      "who-we-are who-we-are our-experience"
+      "footer-form footer-form footer-form";
+    column-gap: var(--size-8px);
   }
 
   .footer-links {
@@ -545,7 +568,8 @@
   }
 
   .footer-logo-links {
-    gap: 0;
+    gap: var(--size-16px);
+    flex-wrap: wrap;
   }
 
   .footer-links__ul {
@@ -677,5 +701,9 @@
   .small-btn {
     padding: 0 var(--size-10px);
     min-width: var(--size-80px);
+  }
+
+  .footer-btn {
+    padding: 0;
   }
 }
