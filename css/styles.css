@@ -8,9 +8,9 @@
 
   /* Color */
 
-  --clr-primary: #0d6dfd;
+  --clr-primary: rgb(13, 109, 253);
   --clr-primary-70: rgba(13, 109, 253, 0.7);
-  --clr-crimson: #0051c9;
+  --clr-crimson: rgb(0, 81, 201);
 
   --clr-neutral-60: rgba(255, 255, 255, 0.6);
   --clr-neutral-100: rgb(255, 255, 255);
@@ -129,15 +129,24 @@ body {
 
 /* Header */
 
-.header-filler {
-  --size-92px: 5.75rem;
+.mobile-navbar--backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99999999999;
+}
 
-  height: var(--size-92px);
+.mobile-navbar {
+  width: 300px;
+}
+
+.header-filler {
+  --size-filler: 5.75rem;
+
+  height: var(--size-filler);
 }
 
 .main-header {
-  background-color: transparent !important;
-  margin-block: 1.25rem;
+  /* background-color: transparent !important; */
+  padding-block: 1.25rem;
   z-index: 9999999;
 }
 
