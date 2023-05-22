@@ -58,23 +58,68 @@
 
 /* Breakpoint: 992px */
 @media (max-width: 62rem) {
-  
+
   .header-filler {
     --size-filler: 4.25rem;
   }
-  
+
   .main-header {
     padding-block: 0.5rem;
+    transition: all 0.5s ease;
   }
-  
+
   .main-header .navbar {
     display: flex;
     align-items: center;
   }
-  
+
   .header__contact {
     display: none;
   }
+
+  /* Togle menu */
+
+  .header__container .nav-item:not(:first-child) {
+    margin-left: unset;
+  }
+
+  .main-header .navbar-collapse {
+    position: fixed;
+    right: -100%;
+    top: 68px;
+    z-index: 100000;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .main-header .navbar-collapse.show {
+    right: 0;
+  }
+
+  .header__container .navbar-nav {
+    justify-content: center;
+    background-color: var(--clr-neutral-100);
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .header__container .nav-item {
+    padding-block: var(--size-10px);
+    display: block;
+    background-color: var(--clr-neutral-100);
+    border-bottom: 1px solid rgba(13, 109, 253, 0.2);
+    width: 100%;
+  }
+
+  /* .header__container .nav-item:last-child {
+    margin-block: var(--size-10px);
+    display: block;
+    background-color: var(--clr-neutral-100);
+    border-bottom: 1px solid rgba(13, 109, 253, 0.2);
+    width: 100%;
+  } */
+
+  /* Carousel */
 
   .section__header {
     margin-bottom: var(--size-40px);
@@ -86,7 +131,9 @@
 
   .custom-carousel .carousel-control {
     display: none;
-}
+  }
+
+  /* Values */
 
   .our-values {
     padding-top: var(--size-80px);
@@ -498,7 +545,16 @@
 /* Breakpoint: 576px */
 @media (max-width: 36rem) {
   .custom-carousel .carousel-indicators {
-    margin-top: var(--size-80px);
+    margin-top: var(--size-60px);
+  }
+
+  .custom-carousel .carousel-indicators>* {
+    width: var(--size-80px);
+  }
+
+  .custom-carousel .carousel-indicators>*::before {
+    line-height: var(--size-21px);
+    font-size: var(--fs-24px);
   }
 
   .custom-carousel .carousel-item {
@@ -533,7 +589,7 @@
 
   .recent-news {
     padding-bottom: var(--size-60px);
-}
+  }
 
   .what-our-clients-said {
     gap: var(--size-90px);
@@ -581,7 +637,7 @@
     gap: 1.875rem;
   }
 
-  .copyright-scroll > :first-child {
+  .copyright-scroll> :first-child {
     align-self: flex-start !important;
   }
 
@@ -631,6 +687,7 @@
   .employee-benefits {
     padding-bottom: var(--size-60px);
   }
+
   /* Services */
 
   .services-page-item:last-child::before {
@@ -654,7 +711,7 @@
     padding-top: var(--size-60px);
   }
 
-  .our-works__container > .services__items {
+  .our-works__container>.services__items {
     display: none !important;
   }
 

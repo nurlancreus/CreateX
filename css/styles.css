@@ -8,9 +8,9 @@
 
   /* Color */
 
-  --clr-primary: #0d6dfd;
+  --clr-primary: rgb(13, 109, 253);
   --clr-primary-70: rgba(13, 109, 253, 0.7);
-  --clr-crimson: #0051c9;
+  --clr-crimson: rgb(0, 81, 201);
 
   --clr-neutral-60: rgba(255, 255, 255, 0.6);
   --clr-neutral-100: rgb(255, 255, 255);
@@ -128,6 +128,15 @@ body {
 /* Project */
 
 /* Header */
+
+.mobile-navbar--backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99999999999;
+}
+
+.mobile-navbar {
+  width: 300px;
+}
 
 .header-filler {
   --size-filler: 5.75rem;
